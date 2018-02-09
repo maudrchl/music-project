@@ -1,0 +1,16 @@
+.navbar{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(4, 4fr);
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black); /* best colour */
+  }
+
+  body{
+      margin: 10px;
+  }
