@@ -8,7 +8,7 @@
             include 'navigation.php';
         ?>
     </div>
-    <h1>PROFILE</h1>
+    <h1>SETTINGS</h1>
 </div>
 </body>
 <script src="../js/main.js"></script>

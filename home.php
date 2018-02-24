@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+<?php
+    include 'components/header.php'
+?>
+
 <div class="container">
     <div class="items">
         <?php
@@ -15,9 +10,10 @@
     </div>
     <div class="items">
         <?php
-            include 'components/profile.php';
+            include 'components/social.php';
         ?>
     </div>
 </div>
 </body>
+<script src="../js/main.js"></script>
 </html>

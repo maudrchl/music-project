@@ -8,8 +8,8 @@
   font-size: 20px;
   grid-template-columns: repeat(12, 100px 1fr); }
 
-span {
-  background: red; }
+body {
+  margin: 10px; }
 
 .navbar {
   display: grid;
@@ -23,13 +23,12 @@ span {
   background-color: var(--black);
   /* best colour */ }
 
-body {
-  margin: 10px; }
+.item.active {
+  background: #101010; }
 
 body {
   font-size: 0;
   margin: 0;
-  padding: 0;
-  background: pink; }
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
