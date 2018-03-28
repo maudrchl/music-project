@@ -7,4 +7,3 @@
     <title>NetPad Experience</title>
 </head>
 <body>
-<h1>Tara</h1>
