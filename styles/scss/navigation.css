@@ -1,0 +1,22 @@
+body {
+  margin: 10px; }
+
+.navbar {
+  position: fixed;
+  display: grid;
+  width: 100px;
+  height: 100vh;
+  grid-template-rows: repeat(4, 4fr);
+  overflow: hidden; }
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  /* best colour */ }
+
+.item.active {
+  background: #101010; }
+
+/*# sourceMappingURL=navigation.css.map */

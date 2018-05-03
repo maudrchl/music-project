@@ -8,7 +8,7 @@
             include 'navigation.php';
         ?>
     </div>
-    <h1>PAD</h1>
+    <h1>Your Pad</h1>
 </div>
 </body>
 <script src="../js/main.js"></script>
