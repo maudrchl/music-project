@@ -3,9 +3,12 @@ body {
 }
 
 .navbar {
+    position: fixed;
     display: grid;
+    width:100px;
     height: 100vh;
     grid-template-rows: repeat(4, 4fr);
+    overflow: hidden;
 }
 
 .item {

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAe;EACX,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,cAAc;;AAGtC,mBAAoB;EAChB,WAAW,EAAE,CAAC;EACd,QAAQ,EAAE,CAAC;EACX,gBAAgB,EAAE,IAAI",
-"sources": ["pad.scss"],
-"names": [],
-"file": "pad.css"
-}

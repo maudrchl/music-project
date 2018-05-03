@@ -2,6 +2,20 @@
 @import "navigation.scss";
 @import "pad.scss";
 
+@font-face {
+    font-family: NexaH;
+    src: url(../assets/fonts//NexaBlack.otf);
+}
+@font-face {
+    font-family: NexaL;
+    src: url(../assets/fonts//Nexa-Light.otf);
+}
+
+@font-face {
+    font-family: NexaB;
+    src: url(../assets/fonts//NexaBlack.otf);
+}
+
 body{
     font-size: 0;
     margin: 0;
