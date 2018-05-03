@@ -21,10 +21,10 @@ h1 {
   background: #E9E9E9; }
 
 .songs {
-  grid-column: 3/12; }
+  grid-column: 3 / 12; }
 
 .song1 {
-  grid-column: 3/12;
+  grid-column: 3 / 12;
   grid-row: 3 / 6; }
 
 .song2 {
@@ -37,7 +37,7 @@ h1 {
   grid-row: 12 / 15; }
 
 .settings {
-  grid-column: 3/12; }
+  grid-column: 3 / 12; }
 
 .setting1 {
   grid-column: span 12;
