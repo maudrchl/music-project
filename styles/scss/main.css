@@ -26,19 +26,9 @@ body {
 .item.active {
   background: #101010; }
 
-.pad_container {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(4, 4fr); }
-
-.pad_container .pad {
-  grid-column: 2;
-  grid-row: 1;
-  background-color: pink; }
-
 body {
   font-size: 0;
   margin: 0;
   padding: 0; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
