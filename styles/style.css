@@ -279,8 +279,43 @@ input::placeholder {
 
 .message {
   padding-top: 20px;
+  font-size: 16px;
   font-family: NexaL, sans-serif;
   color: red; }
+
+.yellow_border {
+  width: 100%;
+  height: 50px;
+  background: #FFC24B; }
+
+.inscription_main {
+  grid-column: 3/10;
+  grid-row: 2/9; }
+
+.inscription_title {
+  font-size: 30px;
+  font-family: NexaH, sans-serif;
+  text-align: center; }
+
+.form_inscription {
+  grid-column: 4/9;
+  grid-row: 4/7;
+  margin-top: -40px; }
+
+.inscription {
+  width: 220px;
+  height: 50px;
+  background: #FFC24B;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: NexaH, sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.last_input {
+  margin-bottom: 40px; }
 
 @font-face {
   font-family: NexaH;
@@ -296,3 +331,15 @@ body {
   margin: 0;
   padding: 0;
   color: black; }
+
+.name_login {
+  position: absolute;
+  right: 160px;
+  top: 62px;
+  font-family: NexaH, sans-serif; }
+
+.off {
+  position: absolute;
+  right: 125px;
+  top: 60px;
+  cursor: pointer; }

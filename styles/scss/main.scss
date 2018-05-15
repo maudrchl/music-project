@@ -3,6 +3,7 @@
 @import "navigation";
 @import "pad";
 @import "login";
+@import "inscription";
 
 @font-face {
     font-family: NexaH;
@@ -23,4 +24,20 @@ body{
     margin: 0;
     padding: 0;
     color: black;
+}
+
+.name_login
+{
+    position: absolute;
+    right: 160px;
+    top: 62px;
+    font-family: NexaH, sans-serif;
+}
+
+.off
+{
+    position: absolute;
+    right: 125px;
+    top: 60px;
+    cursor: pointer;
 }

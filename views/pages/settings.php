@@ -1,5 +1,4 @@
 <?php
-    include 'views/partials/header.php'
 ?>
 
 <div class="container">

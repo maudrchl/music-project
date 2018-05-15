@@ -1,5 +1,4 @@
 <?php
-    include 'views/partials/header.php';
     include 'views/partials/navigation.php';
 ?>
 

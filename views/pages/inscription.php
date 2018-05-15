@@ -1,8 +1,5 @@
 <?php
 
-    include 'config.php';
-    include 'header.php';
-
     $message = '';
 
     if(!empty($_POST))
@@ -10,6 +7,11 @@
         $email = $_POST['email'];
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $name = $_POST['name'];
+
+        $_SESSION['user'] = [
+            'email' => $user->email,
+            'name' => $user->name,
+        ];
 
         $prepare = $pdo->prepare('
             INSERT INTO
@@ -19,43 +21,40 @@
         ');
         $prepare->bindValue('email', $email);
         $prepare->bindValue('password', $password);
+        $prepare->bindValue('name', $name);
         $prepare->execute();
 
         $message = 'User registered';
+        header('Location: social');
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Inscription</title>
-</head>
+
 <body>
-    <h1>Inscription</h1>
-
-    <?php
-        include 'header.php';
-    ?>
-
-    <p><?= $message ?></p>
-
-    <form action="#" method="post">
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">Email
+    <div class="yellow_border"></div>
+    <div class="container">
+        <div class="inscription_main">
+            <h2 class="inscription_title">Sign Up</h2>
         </div>
-        <div>
-            <input type="password" name="password" id="password">Password
-            <label for="password">Password</label>
+        <div class="form_inscription">
+            <form action="#" method="post">
+                <div class="form_inscription">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="netpad@experience.com">   
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="•••••••••">
+                </div>
+                <div class="last_input">
+                    <label for="name">Name</label>
+                    <input type="name" name="name" id="name" placeholder="Pad">
+                </div>
+                <div>
+                    <input type="submit" class="inscription"></input>
+                </div>
+                <p class="message"><?= $message ?></p>
+            </form>
         </div>
-        <div>
-            <input type="text" name="name" id="name">Name
-            <label for="name">Password</label>
-        </div>
-        <div>
-            <input type="submit">
-        </div>
-    </form>
-
+    </div>
 </body>
 </html>

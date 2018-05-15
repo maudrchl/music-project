@@ -1,12 +1,11 @@
 <?php
-    include 'views/partials/header.php';
 
     $message = '';
 
     if(!empty($_POST))
     {
         $email = $_POST['email'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
         $prepare = $pdo->prepare('
             SELECT
@@ -32,8 +31,10 @@
             {
                 $_SESSION['user'] = [
                     'email' => $user->email,
+                    'name' => $user->name,
                 ];
                 $message = 'You are logged in';
+                header('Location: social');
             }
             else
             {
@@ -61,7 +62,7 @@
                     <input type="submit" class="submit" value="log in">
                 </div>
                 <div>
-                    <a class="signup" href="views/pages/inscription.php">Sign up</a>
+                    <a class="signup" href="inscription">Sign up</a>
                 </div>
             </form>
             <p class="message"><?= $message ?></p>
