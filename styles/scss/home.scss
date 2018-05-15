@@ -8,7 +8,7 @@
   height: 100vh;
   font-size: 20px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-template-rows: repeat(20, 50px);
+  grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
   grid-gap: 20px;
 }
 

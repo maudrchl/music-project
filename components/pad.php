@@ -9,27 +9,102 @@
         ?>
         </div>
         <div class="pad_background items"></div>
-        <div class="pad items item">
-            <div class="top_title_beats top_title">BEATS</div>
-                <!--<div class="top_title_container">
-                    <div class="title_beats pad_title">
-                        <div class="button_loop button_beats"></div>
-                    </div>
-                    <div class="title_bass pad_title">
-                        <div class="button_loop  button_bass"></div>
-                    </div>
-                    <div class="title_melodies pad_title">
-                        <div class="button_loop  button_melodies"></div>
-                    </div>
+        <div class="pad items">
+            <span class="top_title_beats top_title">BEATS</span>
+            <span class="top_title_bass top_title">BASS</span>
+            <span class="top_title_melodies top_title">MELODIES</span>
+            <div class="options">
+                <a href="#">
+                    <img class="options_img" src="../assets/img/rouage.svg" alt="options">
+                </a>
+            </div>
+            <div class="loop loop_beats">
+                <img src="../assets/img/loop.svg" alt="loop"> loop
+            </div>
+            <div class="loop loop_bass">
+                <img src="../assets/img/loop.svg" alt="loop"> loop
+            </div>
+            <div class="loop loop_melodies">
+                <img src="../assets/img/loop.svg" alt="loop"> loop
+            </div>
+            <div class="left_buttons">
+                <div class="play">
+                    <a href="#">
+                        <img src="../assets/img/play.svg" alt="play">
+                    </a>
                 </div>
-                <div class="option_menu"></div>
-                <div class="left_buttons_container">
-                    <div class="left_button button_play"></div>
-                    <div class="left_button button_rec"></div>
-                    <div class="left_button button_stop"></div>
-                    <div class="left_button button_loop"></div>
-                    <div class="left_button button_delete"></div>
+                <div class="rec">
+                    <a href="#">
+                        <img src="../assets/img/rec.svg" alt="rec">
+                    </a>
                 </div>
+                <div class="stop">
+                    <a href="#">
+                        <img src="../assets/img/stop.svg" alt="stop">
+                    </a>
+                </div>
+                <div class="loop_song">
+                    <a href="#">
+                        <img src="../assets/img/replay.svg" alt="loopsong">
+                    </a>
+                </div>
+                <div class="delete">
+                    <a href="#">
+                        <img src="../assets/img/delete.svg" alt="delete">
+                    </a>
+                </div>
+                <!-- window.prompt 'etes vous sur?' -->
+            </div>
+            <div class="left_touches_container_beats">
+                <div class="touches_beat left_touche_beats"></div>
+                <div class="touches_beat left_touche_beats"></div>
+                <div class="touches_beat left_touche_beats"></div>
+                <div class="touches_beat left_touche_beats"></div>
+                <div class="touches_beat left_touche_beats"></div>
+                <div class="touches_beat left_touche_beats"></div>
+            </div>
+            <div class="right_touches_container_beats">
+                <div class="touches_beat right_touche_beats"></div>
+                <div class="touches_beat right_touche_beats"></div>
+                <div class="touches_beat right_touche_beats"></div>
+                <div class="touches_beat right_touche_beats"></div>
+                <div class="touches_beat right_touche_beats"></div>
+                <div class="touches_beat right_touche_beats"></div>
+            </div>
+            <div class="left_touches_container_bass">
+                <div class="touches_bass left_touche_bass"></div>
+                <div class="touches_bass left_touche_bass"></div>
+                <div class="touches_bass left_touche_bass"></div>
+                <div class="touches_bass left_touche_bass"></div>
+                <div class="touches_bass left_touche_bass"></div>
+                <div class="touches_bass left_touche_bass"></div>
+            </div>
+            <div class="right_touches_container_bass">
+                <div class="touches_bass right_touche_bass"></div>
+                <div class="touches_bass right_touche_bass"></div>
+                <div class="touches_bass right_touche_bass"></div>
+                <div class="touches_bass right_touche_bass"></div>
+                <div class="touches_bass right_touche_bass"></div>
+                <div class="touches_bass right_touche_bass"></div>
+            </div>
+            <div class="left_touches_container_melodies">
+                <div class="touches_melodies left_touche_melodies"></div>
+                <div class="touches_melodies left_touche_melodies"></div>
+                <div class="touches_melodies left_touche_melodies"></div>
+                <div class="touches_melodies left_touche_melodies"></div>
+                <div class="touches_melodies left_touche_melodies"></div>
+                <div class="touches_melodies left_touche_melodies"></div>
+            </div>
+            <div class="right_touches_container_melodies">
+                <div class="touches_melodies right_touche_melodies"></div>
+                <div class="touches_melodies right_touche_melodies"></div>
+                <div class="touches_melodies right_touche_melodies"></div>
+                <div class="touches_melodies right_touche_melodies"></div>
+                <div class="touches_melodies right_touche_melodies"></div>
+                <div class="touches_melodies right_touche_melodies"></div>
+            </div>
+        </div>
+        <!--
                 <div class="touches_container">
                     <div class="touches_beat">
                         <div class="button button_1 key-65" data-sound="clap"></div>
@@ -74,7 +149,7 @@
                         <div class="button button_12"></div>
                     </div>
                 </div>-->
-            </div>
+    </div>
 
 
     </div>
