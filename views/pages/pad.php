@@ -1,5 +1,6 @@
 <?php
-    include 'header.php'
+    include 'views/partials/header.php';
+    include 'views/partials/navigation.php';
 ?>
 
     <div class="container">
@@ -79,7 +80,7 @@
 
     </div>
     </body>
-    <script src="../js/pad.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/pad.js"></script>
+    <script src="js/main.js"></script>
 
     </html>

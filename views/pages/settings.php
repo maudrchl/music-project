@@ -1,11 +1,11 @@
 <?php
-    include 'header.php'
+    include 'views/partials/header.php'
 ?>
 
 <div class="container">
     <div class="items">
         <?php
-            include 'navigation.php';
+            include 'views/partials/navigation.php';
         ?>
     </div>
     <h1>Settings</h1>
@@ -28,5 +28,5 @@
     <div class="items settings"></div>
 </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </html>
