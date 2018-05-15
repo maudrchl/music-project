@@ -1,0 +1,82 @@
+.img_pad
+{
+    height: 100vh;
+    grid:auto;
+}
+
+.form
+{
+    grid-column: 7/12;
+    grid-row: 2/10;
+    text-align: center;
+}
+
+.login_title
+{
+    font-size: 30px;
+    font-family: NexaH, sans-serif;
+    text-align: center;
+}
+
+form 
+{
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+label
+{
+    display: block;
+    font-family: NexaL, sans-serif;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+input
+{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+input::placeholder
+{
+    font-family: NexaL, sans-serif;
+}
+
+.submit 
+{
+    width: 206px;
+    height: 50px;
+    background: $yellow;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: NexaH, sans-serif;
+    color: white;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.signup
+{
+    padding: 15px 68px;
+    border: 1px solid $yellow;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: NexaH, sans-serif;
+    color: $yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.message
+{
+    padding-top: 20px;
+    font-family: NexaL, sans-serif;
+    color: red;
+}

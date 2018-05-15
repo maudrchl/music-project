@@ -1,6 +1,8 @@
-@import "home.scss";
-@import "navigation.scss";
-@import "pad.scss";
+@import "variables";
+@import "home";
+@import "navigation";
+@import "pad";
+@import "login";
 
 @font-face {
     font-family: NexaH;

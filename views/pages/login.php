@@ -1,5 +1,5 @@
 <?php
-    include 'config.php';
+    include 'views/partials/header.php';
 
     $message = '';
 
@@ -42,34 +42,32 @@
         }
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
 <body>
-    <h1>Login</h1>
-
-    <?php
-        include 'header.php';
-    ?>
-
-    <p><?= $message ?></p>
-
-    <form action="#" method="post">
-        <div>
-            <input type="email" name="email" id="email">
-            <label for="email">Email</label>
+    <div class="container">
+        <img class="img_pad" src="assets/img/pad.png">
+        <div class="form">
+            <h2 class="login_title">Login</h2>
+            <img src="assets/img/logo.png" width="30" class="logo">
+            <form action="#" method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="netpad@experience.com">   
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="•••••••••">
+                </div>
+                <div>
+                    <input type="submit" class="submit" value="log in">
+                </div>
+                <div>
+                    <a class="signup" href="views/pages/inscription.php">Sign up</a>
+                </div>
+            </form>
+            <p class="message"><?= $message ?></p>
         </div>
-        <div>
-            <input type="password" name="password" id="password">
-            <label for="password">Password</label>
-        </div>
-        <div>
-            <input type="submit">
-        </div>
-    </form>
+    </div>
+
 
 </body>
 </html>
