@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 5 Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="19" cy="19" r="19"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-296.000000, -364.000000)">
+            <g id="Group-7" transform="translate(256.500000, 430.500000) rotate(90.000000) translate(-256.500000, -430.500000) translate(-100.000000, 351.000000)">
+                <g id="Group-5" transform="translate(164.000000, 0.000000)">
+                    <g id="Oval-5-Copy-6" transform="translate(128.000000, 0.000000)">
+                        <circle fill="#BD0202" cx="19.5" cy="19.5" r="9.5"></circle>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#E0E0E0" stroke-width="3" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
