@@ -180,28 +180,28 @@ body {
 
 .left_touches_container_beats {
   grid-column: 2 / 11;
-  margin-left: 50px;
   grid-row: 6;
+  margin-left: 10px;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_beats {
   grid-column: 3 / 11;
-  margin-left: 50px;
+  margin-left: 20px;
   grid-row: 6;
   display: grid;
   grid-gap: 10px; }
 
 .left_touches_container_bass {
   grid-column: 4 / 11;
-  margin-left: 50px;
+  margin-left: 30px;
   grid-row: 6;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_bass {
   grid-column: 5 / 11;
-  margin-left: 50px;
+  margin-left: 40px;
   grid-row: 6;
   display: grid;
   grid-gap: 10px; }
@@ -215,7 +215,7 @@ body {
 
 .right_touches_container_melodies {
   grid-column: 7 / 11;
-  margin-left: 50px;
+  margin-left: 60px;
   grid-row: 6;
   display: grid;
   grid-gap: 10px; }
