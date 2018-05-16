@@ -56,71 +56,80 @@
                 <!-- window.prompt 'etes vous sur?' -->
             </div>
 
+
+            <div class="touches_container">
+
             <!--LEFT BEAT TOUCHES -->
 
             <div class="left_touches_container_beats">
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
-                <div class="touches_beat left_touche_beats"><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats key-65" data-sound="clap" ><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats"><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats"><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats"><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats"><a href="#"></a></div>
+                <div class="touches touches_beat left_touche_beats"><a href="#"></a></div>
             </div>
 
             <!--RIGHT BEAT TOUCHES -->
 
             <div class="right_touches_container_beats">
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
-            <div class="touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
+            <div class="touches touches_beat right_touche_beats"><a href="#"></a></div>
             </div>
 
             <!--LEFT BASS TOUCHES -->
 
             <div class="left_touches_container_bass">
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass left_touche_bass"><a href="#"></a></div>
             </div>
 
             <!--RIGHT BASS TOUCHES -->
 
             <div class="right_touches_container_bass">
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
-            <div class="touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
+            <div class="touches touches_bass right_touche_bass"><a href="#"></a></div>
                 
             </div>
 
             <!--LEFT MELODIES TOUCHES -->
             <div class="left_touches_container_melodies">
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
-            <div class="touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
+            <div class="touches touches_melodies left_touche_melodies"><a href="#"></a></div>
             </div>
 
             <!--RIGHT MELODIES TOUCHES -->
             <div class="right_touches_container_melodies">
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
-                <div class="touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
+                <div class="touches touches_melodies right_touche_melodies"><a href="#"></a></div>
             </div>
+
+            <audio class="sound clap" src="sounds/clap.mp3"></audio>
+            <audio class="sound clap" src="sounds/clap.mp3"></audio>
         </div>
+        </div>
+
+
                         <!--
                         <div class="touches_container">
                         <div class="touches_beat">
@@ -135,6 +144,5 @@
     </div>
     </body>
     <script src="js/pad.js"></script>
-    <script src="js/main.js"></script>
 
     </html>
