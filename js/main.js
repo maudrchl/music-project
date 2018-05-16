@@ -7,15 +7,21 @@ for (let i = 0; i < $items.length; i++){
         if ($items[i].classList.contains('active')){
             $items[i].classList.remove('active')
             $items[i].classList.toggle('active')
-        //     if ($items[i].dataset.icone == 1){
-
-        //     } else if ($items[i].dataset.icone == 2){
-
-        //     } else if ($items[i].dataset.icone == 3){
-
-        //     } else if ($items[i].dataset.icone == 4){
-        // }
     }
     $items[i].classList.toggle('active')
     })
 }   
+
+const $settings = Array.from(document.querySelectorAll('.settings'))
+const $subsettings = Array.from(document.querySelectorAll('.subsettings'))
+
+for (let i = 0; i < $settings.length; i++){
+    $settings[i].addEventListener('mousedown', (e) =>{
+        e.preventDefault()
+        if ($settings[i].classList.contains('active')){
+            $settings[i].classList.remove('active')
+            $settings[i].classList.toggle('active')
+        }
+        $settings[i].classList.toggle('active')
+    })
+}

@@ -36,13 +36,6 @@ h1 {
 .song4 {
   grid-row: 12 / 15; }
 
-.settings {
-  grid-column: 3 / 12; }
-
-.setting1 {
-  grid-column: span 12;
-  opacity: 0; }
-
 h3 {
   margin-left: 100px;
   margin-top: 18px;
@@ -56,6 +49,7 @@ body {
 
 .navbar {
   position: fixed;
+  top: 0;
   display: grid;
   width: 100px;
   height: 100vh;
@@ -316,6 +310,27 @@ input::placeholder {
 
 .last_input {
   margin-bottom: 40px; }
+
+.settings {
+  width: 75%;
+  height: 20%;
+  background: #E9E9E9;
+  margin-left: 15%;
+  cursor: pointer; }
+  .settings h3 {
+    padding-top: 22px; }
+
+.settings.active {
+  height: 300px; }
+
+.subsettings {
+  width: 100%;
+  height: 600px;
+  background: red;
+  display: none; }
+
+.setting1 {
+  margin-top: 150px; }
 
 @font-face {
   font-family: NexaH;

@@ -4,7 +4,7 @@
 
     if (isset($_GET['q'])) {
         switch($_GET['q']) {
-            case '':
+            case 'login':
                 include "views/pages/login.php";
                 break;
             case 'social':

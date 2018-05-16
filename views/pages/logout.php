@@ -3,6 +3,7 @@
     include 'views/partials/header.php';
 
     session_destroy();
+    header('Location: login');
 
 ?>
 <body>

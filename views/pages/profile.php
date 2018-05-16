@@ -10,6 +10,8 @@
         ?>
     </div>
     <h1>Your profile</h1>
+    <span class="name_login"><?= substr($_SESSION['user']['name'], 0, 45).'.' ?></span>
+    <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
 </div>
 </body>
 <script src="../js/main.js"></script>
