@@ -209,10 +209,14 @@ body {
 
 .right_touches_container_melodies {
   grid-column: 7 / 11;
-  margin-left: 3z0px;
+  margin-left: 30px;
   grid-row: 6;
   display: grid;
   grid-gap: 10px; }
+
+.touches_container {
+  display: grid;
+  grid-column: 2 / 11; }
 
 .img_pad {
   height: 100vh;
