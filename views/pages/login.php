@@ -46,9 +46,11 @@
 <body>
     <div class="container">
         <img class="img_pad" src="assets/img/pad.png">
+        
         <div class="form">
-            <h2 class="login_title">Login</h2>
+            <h2 class="login_title">NetPad Experience</h2>
             <img src="assets/img/logo.png" width="30" class="logo">
+            <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes in civitatibus perviis.</p>
             <form action="#" method="post">
                 <div>
                     <label for="email">Email</label>

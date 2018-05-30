@@ -20,36 +20,18 @@ h1 {
     font-family: NexaH, sans-serif;
 }
 
-// .songs {
-//     display: grid;
-//     grid-column: 4 / 22;
-//     grid-row: 4 / 8;
-//     background: red;
-// }
-
-.items {
-    background:#E9E9E9;
+.items_social
+{
+    width: 70%;
+    height: 180px;
+    background: $grey;
+    margin-left: 200px;
+    margin-bottom: 20px;
 }
 
-.songs {
-    grid-column: 3 / 12;
-}
-
-.song1{
-    grid-column: 3 / 12;
-    grid-row: 3 / 6;
-}
-
-.song2{
-    grid-row: 6 / 9;
-}
-
-.song3{
-    grid-row: 9 / 12;
-}
-
-.song4{
-    grid-row: 12 / 15;
+.item_social1
+{
+    margin-top: 150px;
 }
 
 h3{
