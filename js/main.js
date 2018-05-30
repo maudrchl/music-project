@@ -6,6 +6,10 @@ if(typeof Settings == "function"){
     const settings = new Settings()
 }
 
+if(typeof Record == "function"){
+    const record = new Record()
+}
+
 // const $items = Array.from(document.querySelectorAll('.item'))
 // const $lol = Array.from(document.querySelectorAll('.lol'))
 // console.log($items)
