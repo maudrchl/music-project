@@ -1,6 +1,7 @@
 const $touches_container = document.querySelector('.touches_container')
 const $buttons = Array.from($touches_container.querySelectorAll('.touches'))
-const $beat = Array.from($touches_container.querySelectorAll('.beats'))
+const $beat = $touches_container.querySelectorAll('.beats')
+console.log($beat)
 
 //create audio element
 
@@ -20,7 +21,6 @@ for (let i = 0; i <= $buttons.length; i++) {
     body.appendChild($sons)
 
 }
-
 
 //create array of sounds from $sons
 
@@ -45,7 +45,7 @@ for (let i = 0; i <= $buttons.length; i++) {
         const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
         if ($button) {
             console.log(event.keyCode)
-            playSound($button.dataset.sound)
+            playSound($button.dataset.$sound)
         }
     })
 
