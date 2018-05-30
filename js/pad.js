@@ -25,6 +25,17 @@ document.addEventListener('keydown', () =>
     if ($button)
     {
         playSound($button.dataset.sound)
+        $button.classList.add('active')
+    }
+})
+
+document.addEventListener('keyup', (event) => 
+{
+    const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+
+    if ($button)
+    {
+        $button.classList.remove('active')
     }
 })
 
