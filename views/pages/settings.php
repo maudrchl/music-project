@@ -29,5 +29,6 @@
     </div>
 </div>
 </body>
+<script src="js/Settings.js"></script>
 <script src="js/main.js"></script>
 </html>

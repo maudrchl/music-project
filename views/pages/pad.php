@@ -123,67 +123,6 @@
                 <div class="touches touches_melodies right_touche_melodies key-222" data-sound="35"><a href="#"></a></div>
                 <div class="touches touches_melodies right_touche_melodies key-220" data-sound="36"><a href="#"></a></div>
             </div>
-
-
-
-
-        <!-- //////////////////FIRST PAD//////////////// -->
-
-
-           <!--songs bass -->
-            <!--
-            <audio class="sound pad_2" src="sons/bass/2.wav"></audio>
-            <audio class="sound pad_3" src="sons/bass/3.wav"></audio>
-            <audio class="sound pad_4" src="sons/bass/4.wav"></audio>
-            <audio class="sound pad_5" src="sons/bass/5.wav"></audio>
-            <audio class="sound pad_6" src="sons/bass/6.wav"></audio>
-            <audio class="sound pad_7" src="sons/bass/7.wav"></audio>
-            <audio class="sound pad_8" src="sons/bass/8.wav"></audio>
-            <audio class="sound pad_9" src="sons/bass/9.wav"></audio>
-            <audio class="sound pad_10" src="sons/bass/10.wav"></audio>
-            <audio class="sound pad_11" src="sons/bass/11.wav"></audio>
-            <audio class="sound pad_12" src="sons/bass/12.wav"></audio>-->
-
-            <!--songs beats -->
-            <!--<audio class="sound pad_13" src="sons/beats/1.wav"></audio>
-            <audio class="sound pad_14" src="sons/beats/2.wav"></audio>
-            <audio class="sound pad_15" src="sons/beats/3.wav"></audio>
-            <audio class="sound pad_16" src="sons/beats/4.wav"></audio>
-            <audio class="sound pad_17" src="sons/beats/5.wav"></audio>
-            <audio class="sound pad_18" src="sons/beats/6.wav"></audio>
-            <audio class="sound pad_19" src="sons/beats/7.wav"></audio>
-            <audio class="sound pad_20" src="sons/beats/8.wav"></audio>
-            <audio class="sound pad_21" src="sons/beats/9.wav"></audio>
-            <audio class="sound pad_22" src="sons/beats/10.wav"></audio>
-            <audio class="sound pad_23" src="sons/beats/11.wav"></audio>
-            <audio class="sound pad_24" src="sons/beats/12.wav"></audio>-->
-
-            <!--songs melodies -->
-            <!--<audio class="sound pad_25" src="sons/melodies/1.wav"></audio>
-            <audio class="sound pad_26" src="sons/melodies/2.wav"></audio>
-            <audio class="sound pad_27" src="sons/melodies/3.wav"></audio>
-            <audio class="sound pad_28" src="sons/melodies/4.wav"></audio>
-            <audio class="sound pad_29" src="sons/melodies/5.wav"></audio>
-            <audio class="sound pad_30" src="sons/melodies/6.wav"></audio>
-            <audio class="sound pad_31" src="sons/melodies/7.wav"></audio>
-            <audio class="sound pad_32" src="sons/melodies/8.wav"></audio>
-            <audio class="sound pad_33" src="sons/melodies/9.wav"></audio>
-            <audio class="sound pad_34" src="sons/melodies/10.wav"></audio>
-            <audio class="sound pad_35" src="sons/melodies/11.wav"></audio>
-            <audio class="sound pad_36" src="sons/melodies/12.wav"></audio>-->
-        
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
     <div class="song_select">
