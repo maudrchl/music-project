@@ -1,5 +1,6 @@
 const $touches_container = document.querySelector('.touches_container')
 const $buttons = Array.from($touches_container.querySelectorAll('.touches'))
+const $beat = Array.from($touches_container.querySelectorAll('.beats'))
 
 //create audio element
 
