@@ -66,7 +66,7 @@ body {
 
 .pad {
   display: grid;
-  grid-column: 3 / 12;
+  grid-column: 4 / 11;
   grid-row: 2 / 11;
   border-radius: 24px;
   background-color: #252525; }
@@ -77,21 +77,21 @@ body {
   font-family: NexaL, sans-serif; }
 
 .top_title_beats {
-  grid-column: 3 / 9;
+  grid-column: 3 / 12;
   grid-row: 1 / 8; }
 
 .top_title_bass {
-  grid-column: 5 / 9;
+  grid-column: 6 / 11;
   grid-row: 1 / 8; }
 
 .top_title_melodies {
-  grid-column: 7 / 9;
-  grid-row: 1 / 8; }
+  grid-column: 8 / 11;
+  grid-row: 1 / 8;
+  margin-left: -10px; }
 
 .options {
-  grid-column: 10 / 11;
-  grid-row: 1 / 8;
-  margin-top: 20px; }
+  grid-column: 11 / 11;
+  grid-row: 3 / 8; }
 
 .options_img {
   width: 22%; }
@@ -104,14 +104,13 @@ body {
   font-size: 16px; }
 
 .loop_beats {
-  grid-column: 3 / 11; }
+  grid-column: 3 / 9; }
 
 .loop_bass {
-  grid-column: 5 / 11; }
+  grid-column: 6 / 9; }
 
 .loop_melodies {
-  grid-column: 7 / 11;
-  margin-left: 15px; }
+  grid-column: 8 / 10; }
 
 .left_buttons {
   grid-column: 1;
@@ -164,50 +163,78 @@ body {
   grid-column: 1; }
 
 .left_touches_container_beats {
-  grid-column: 2 / 11;
-  grid-row: 6;
-  margin-left: 5px;
+  grid-column: 3 / 11;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_beats {
-  grid-column: 3 / 11;
-  margin-left: 10px;
-  grid-row: 6;
+  grid-column: 4 / 11;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .left_touches_container_bass {
-  grid-column: 4 / 11;
-  margin-left: 15px;
-  grid-row: 6;
+  grid-column: 5 / 11;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_bass {
-  grid-column: 5 / 11;
-  margin-left: 20px;
-  grid-row: 6;
+  grid-column: 6 / 11;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .left_touches_container_melodies {
-  grid-column: 6 / 11;
-  margin-left: 25px;
-  grid-row: 6;
+  grid-column: 7 / 11;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_melodies {
-  grid-column: 7 / 11;
-  margin-left: 30px;
-  grid-row: 6;
+  grid-column: 8 / 8;
+  grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .touches_container {
   display: grid;
-  grid-column: 2 / 11; }
+  grid-column: 1 / 12;
+  grid-row: 6;
+  margin-top: 20px; }
+
+.song_select {
+  display: grid;
+  grid-column: 10 / 12;
+  grid-row: 6;
+  grid-gap: 10px;
+  margin-top: 20px; }
+
+.genre {
+  border-radius: 6px;
+  transform: translateX(-20px); }
+
+.genre:hover {
+  background-color: #c7c7c7; }
+
+.genre1:hover {
+  background-color: #fff; }
+
+.pop_select {
+  grid-row: 1;
+  background-color: #4B4B4B; }
+
+.rock_select {
+  grid-row: 2;
+  background-color: #4B4B4B; }
+
+.house_select {
+  grid-row: 3;
+  background-color: #4B4B4B; }
+
+.changeGenreColor {
+  background-color: #fff; }
 
 .img_pad {
   height: 100vh;
