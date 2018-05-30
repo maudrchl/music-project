@@ -122,10 +122,6 @@
                 <div class="touches touches_melodies right_touche_melodies key-222" data-sound="pad_35"><a href="#"></a></div>
                 <div class="touches touches_melodies right_touche_melodies key-220" data-sound="pad_36"><a href="#"></a></div>
             </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> d770d0a7dfc9b9cec34ca2f8dc2c49a7f32d52df
         </div>
 
     <div class="song_select">
