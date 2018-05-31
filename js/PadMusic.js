@@ -10,7 +10,6 @@ class PadMusic{
     initialize(){
         this.$touches_container = document.querySelector('.touches_container')
         this.$buttons = Array.from(this.$touches_container.querySelectorAll('.touches'))
-
         this.$genres = Array.from(document.querySelectorAll('.genre'))
         this.$genre1 = document.querySelector('.pop_select')
         this.$genre2 = document.querySelector('.rock_select')
@@ -47,6 +46,7 @@ class PadMusic{
             this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
             if (this.$button) {
                 this.playSound(this.$button.dataset.sound)
+                
             }
         })
     }
