@@ -26,18 +26,18 @@ class PadMusic{
         
                 this.$sons.className = `sound pad_${i}`
                 this.$sons.src = `sons/bass/${i}.wav`
-                this.$sons.textContent = 'test'
             });
         
             this.body.appendChild(this.$sons)
         }      
     }
 
-    keySound(){   
+    keySound(){     
         for (this.$button of this.$buttons) {
             this.$button.addEventListener('mousedown', (event) => {
                 event.preventDefault()
                 this.playSound(this.$button.dataset.sound)
+                console.log(this.$button)   
             })
         }
     
@@ -53,7 +53,6 @@ class PadMusic{
 
     playSound(soundName){
         const audio = new Audio()
-        console.log(soundName)
         audio.src = soundName
         audio.play()
     }
