@@ -1,106 +1,103 @@
-<<<<<<< HEAD
-// 
-=======
-const $touches_container = document.querySelector('.touches_container')
-const $buttons = Array.from($touches_container.querySelectorAll('.touches'))
-const $beat = $touches_container.querySelectorAll('.beats')
-console.log($beat)
 
-//create audio element
+// const $touches_container = document.querySelector('.touches_container')
+// const $buttons = Array.from($touches_container.querySelectorAll('.touches'))
+// const $beat = $touches_container.querySelectorAll('.beats')
+// console.log($beat)
 
-for (let i = 0; i <= $buttons.length; i++) {
+// //create audio element
 
-    const body = document.querySelector('body')
-    const $sons = document.createElement('audio')
+// for (let i = 0; i <= $buttons.length; i++) {
 
-    $buttons.forEach(element => {
+//     const body = document.querySelector('body')
+//     const $sons = document.createElement('audio')
 
-        $sons.className = `sound pad_${i}`
-        $sons.src = `sons/bass/${i}.wav`
+//     $buttons.forEach(element => {
 
-        console.log($sons)
-    });
+//         $sons.className = `sound pad_${i}`
+//         $sons.src = `sons/bass/${i}.wav`
 
-    body.appendChild($sons)
+//         console.log($sons)
+//     });
 
-}
+//     body.appendChild($sons)
 
-//create array of sounds from $sons
+// }
 
-    const $sounds = Array.from(document.querySelectorAll('.sound'))
-    const $genres = Array.from(document.querySelectorAll('.genre'))
-    const $genre1 = document.querySelector('.pop_select')
-    const $genre2 = document.querySelector('.rock_select')
-    const $genre3 = document.querySelector('.house_select')
+// //create array of sounds from $sons
 
-    const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
-    if ($button)
-    {
-        playSound($button.dataset.sound)
-        $button.classList.add('active')
-    }
+//     const $sounds = Array.from(document.querySelectorAll('.sound'))
+//     const $genres = Array.from(document.querySelectorAll('.genre'))
+//     const $genre1 = document.querySelector('.pop_select')
+//     const $genre2 = document.querySelector('.rock_select')
+//     const $genre3 = document.querySelector('.house_select')
 
-document.addEventListener('keyup', (event) => 
-{
-    const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+//     const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+//     if ($button)
+//     {
+//         playSound($button.dataset.sound)
+//         $button.classList.add('active')
+//     }
 
-    if ($button)
-    {
-        $button.classList.remove('active')
-//affect a song to a touch
+// document.addEventListener('keyup', (event) => 
+// {
+//     const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
 
-        for (const $button of $buttons) {
-            $button.addEventListener('mousedown', (event) => {
-                event.preventDefault()
+//     if ($button)
+//     {
+//         $button.classList.remove('active')
+// //affect a song to a touch
 
-                playSound($button.dataset.sound)
-            })
-        }
-    }
+//         for (const $button of $buttons) {
+//             $button.addEventListener('mousedown', (event) => {
+//                 event.preventDefault()
 
-    document.addEventListener('keydown', () => {
+//                 playSound($button.dataset.sound)
+//             })
+//         }
+//     }
+
+//     document.addEventListener('keydown', () => {
         
-            const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
-            if ($button) {
-                console.log(event.keyCode)
-                playSound($button.dataset.$sound)
-            }
-        })
+//             const $button = $buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+//             if ($button) {
+//                 console.log(event.keyCode)
+//                 playSound($button.dataset.$sound)
+//             }
+//         })
 
-        const playSound = (soundName) => {
+//         const playSound = (soundName) => {
 
-            const $sound = $sounds.find((element) => element.classList.contains(soundName))
+//             const $sound = $sounds.find((element) => element.classList.contains(soundName))
 
-            $sound.currentTime = 0
-            $sound.play()
-        }
-    })
-
-
+//             $sound.currentTime = 0
+//             $sound.play()
+//         }
+//     })
 
 
-for (const $genre of $genres) {
-    $genre1.addEventListener('click', () => {
-        $genre1.classList.toggle('changeGenreColor')
-        $genre2.classList.remove('changeGenreColor')
-        $genre3.classList.remove('changeGenreColor')
-    })
 
-    $genre2.addEventListener('click', () => {
-        $genre1.classList.remove('changeGenreColor')
-        $genre2.classList.toggle('changeGenreColor')
-        $genre3.classList.remove('changeGenreColor')
-    })
 
-    $genre3.addEventListener('click', () => {
-        $genre1.classList.remove('changeGenreColor')
-        $genre2.classList.remove('changeGenreColor')
-        $genre3.classList.toggle('changeGenreColor')
-    })
+// for (const $genre of $genres) {
+//     $genre1.addEventListener('click', () => {
+//         $genre1.classList.toggle('changeGenreColor')
+//         $genre2.classList.remove('changeGenreColor')
+//         $genre3.classList.remove('changeGenreColor')
+//     })
 
-    $genre1.addEventListener('mouseover', () => {
-        $genre1.classList.remove('genre:hover')
-        $genre1.classList.toggle('genre1:hover')
-    })
-}
->>>>>>> ec8c62ba22685e781da3bd971f5003fe75fd9292
+//     $genre2.addEventListener('click', () => {
+//         $genre1.classList.remove('changeGenreColor')
+//         $genre2.classList.toggle('changeGenreColor')
+//         $genre3.classList.remove('changeGenreColor')
+//     })
+
+//     $genre3.addEventListener('click', () => {
+//         $genre1.classList.remove('changeGenreColor')
+//         $genre2.classList.remove('changeGenreColor')
+//         $genre3.classList.toggle('changeGenreColor')
+//     })
+
+//     $genre1.addEventListener('mouseover', () => {
+//         $genre1.classList.remove('genre:hover')
+//         $genre1.classList.toggle('genre1:hover')
+//     })
+// }
