@@ -1,3 +1,4 @@
+
 // const $touches_container = document.querySelector('.touches_container')
 // const $buttons = Array.from($touches_container.querySelectorAll('.touches'))
 // const $beat = $touches_container.querySelectorAll('.beats')
@@ -61,7 +62,6 @@
 //             if ($button) {
 //                 console.log(event.keyCode)
 //                 playSound($button.dataset.$sound)
-                
 //             }
 //         })
 
