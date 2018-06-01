@@ -46,7 +46,16 @@ class PadMusic{
             this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
             if (this.$button) {
                 this.playSound(this.$button.dataset.sound)
-                
+               this.$button.classList.add('active')
+            }
+        })
+        
+         document.addEventListener('keyup', () => {
+    
+            this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+            if (this.$button) {
+                this.playSound(this.$button.dataset.sound)
+                this.$button.classList.remove('active')
             }
         })
     }
