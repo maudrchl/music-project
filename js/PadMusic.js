@@ -64,7 +64,6 @@ class PadMusic{
     playSound(soundName){
         const audio = new Audio()
         audio.src = soundName
-        console.log(soundName)
         audio.play()
     }
 

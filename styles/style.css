@@ -365,13 +365,14 @@ input::placeholder {
 
 .profile_bar {
   height: 100vh;
-  grid-column: 9/12;
+  grid-column: 10/13;
   background-color: #ECECEC; }
 
 .profile_infos {
   text-align: center;
   padding-top: 130px;
-  font-family: NexaL, sans-serif; }
+  font-family: NexaL, sans-serif;
+  font-size: 17px; }
 
 .pic_profile {
   height: 100px;

@@ -2,6 +2,7 @@
     include 'views/partials/header.php';
     include 'views/partials/navigation.php';
     include 'views/partials/profile-bar.php';
+    
 ?>
 
 <div class="container">
@@ -15,5 +16,5 @@
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
 </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </html>

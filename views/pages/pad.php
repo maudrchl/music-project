@@ -1,7 +1,6 @@
 <?php
     include 'views/partials/navigation.php';
 ?>
-
     <div class="container">
         <div class="items">
             <?php
@@ -18,6 +17,7 @@
                     <img class="options_img" src="assets/img/rouage.svg" alt="options">
                 </a>
             </div>
+            <audio controls autoplay loop></audio>
             <div class="loop loop_beats">
                 <img src="assets/img/loop.svg" alt="loop"> loop
             </div>
@@ -29,18 +29,14 @@
             </div>
             <div class="left_buttons">
                 <div class="play">
-                    <a href="#">
-                        <img src="assets/img/play.svg" alt="play">
-                    </a>
+                    <button class="js-code"><img src="assets/img/play.svg" alt="play"></button>
                 </div>
                 <div class="rec">
-                    <a href="#">
-                        <img src="assets/img/rec.svg" alt="rec">
-                    </a>
+                    <button class="btn btn-primary js-start"><img src="assets/img/rec.svg" alt="rec"></button>
                 </div>
                 <div class="stop">
                     <a href="#">
-                        <img src="assets/img/stop.svg" alt="stop">
+                    <button class="btn btn-warning js-stop"><img src="assets/img/stop.svg" alt="stop"></button>
                     </a>
                 </div>
                 <div class="loop_song">
@@ -124,20 +120,21 @@
             </div>
         </div>
 
-    <div class="song_select">
-        <div class="pop_select genre changeGenreColor"><a href="#"></a></div>
-        <div class="rock_select genre"><a href="#"></a></div>
-        <div class="house_select genre"><a href="#"></a></div>
-    </div>
-
-
-
-
+        <div class="song_select">
+            <div class="pop_select genre changeGenreColor"><a href="#"></a></div>
+            <div class="rock_select genre"><a href="#"></a></div>
+            <div class="house_select genre"><a href="#"></a></div>
+        </div>
         </div>
     </div>
     </div>
     </body>
+    <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/PadMusic.js"></script>
+    <script src="js/Record.js"></script>
+    <script src="js/containerScript.js"></script>
     <script src="js/main.js"></script>
 
     </html>

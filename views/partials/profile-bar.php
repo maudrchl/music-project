@@ -2,7 +2,7 @@
     <div class="profile_bar">
         <div class="profile_infos">
             <div class="pic_profile"></div>
-            <div class="username">@username</div>
+            <div class="username">@<?= substr($_SESSION['user']['name'], 0, 45).'' ?></div>
             <div class="bio">french music lover, pasionnated about electro music !</div>
             <div class="profile_stats">
                 <div class="follwing">200 following</div>
