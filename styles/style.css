@@ -239,6 +239,93 @@ body {
 .touches.active {
   filter: brightness(300%); }
 
+audio {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.audio2 {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start2 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start2:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop2 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop2:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.audio3 {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start3 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start3:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop3 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop3:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
 .img_pad {
   height: 100vh;
   grid: auto; }

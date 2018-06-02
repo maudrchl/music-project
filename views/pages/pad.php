@@ -17,7 +17,6 @@
                     <img class="options_img" src="assets/img/rouage.svg" alt="options">
                 </a>
             </div>
-            <audio controls autoplay loop></audio>
             <div class="loop loop_beats">
                 <img src="assets/img/loop.svg" alt="loop"> loop
             </div>
@@ -29,14 +28,14 @@
             </div>
             <div class="left_buttons">
                 <div class="play">
-                    <button class="js-code"><img src="assets/img/play.svg" alt="play"></button>
+                    <button><img src="assets/img/play.svg" alt="play"></button>
                 </div>
                 <div class="rec">
-                    <button class="btn btn-primary js-start"><img src="assets/img/rec.svg" alt="rec"></button>
+                    <button class="btn btn-primary"><img src="assets/img/rec.svg" alt="rec"></button>
                 </div>
                 <div class="stop">
                     <a href="#">
-                    <button class="btn btn-warning js-stop"><img src="assets/img/stop.svg" alt="stop"></button>
+                    <button class="btn btn-warning"><img src="assets/img/stop.svg" alt="stop"></button>
                     </a>
                 </div>
                 <div class="loop_song">
@@ -121,9 +120,21 @@
         </div>
 
         <div class="song_select">
-            <div class="pop_select genre changeGenreColor"><a href="#"></a></div>
-            <div class="rock_select genre"><a href="#"></a></div>
-            <div class="house_select genre"><a href="#"></a></div>
+            <div class="pop_select genre changeGenreColor">
+                <audio controls autoplay loop width=30 class="audio"></audio>
+                <button class="js-start">Start</button>
+                <button class="js-stop">Stop</button>
+            </div>
+            <div class="rock_select genre">
+                <audio controls autoplay loop width=30 class="audio2"></audio>
+                <button class="js-start2">Start</button>
+                <button class="js-stop2">Stop</button>
+            </div>
+            <div class="house_select genre">
+                <audio controls autoplay loop width=30 class="audio3"></audio>
+                <button class="js-start">Start</button>
+                <button class="js-stop">Stop</button>
+            </div>
         </div>
         </div>
     </div>
