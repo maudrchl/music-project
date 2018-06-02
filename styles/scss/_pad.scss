@@ -212,3 +212,8 @@
 .changeGenreColor {
     background-color: #fff;
 }
+
+.touches.active
+{
+    filter: brightness(300%);
+}

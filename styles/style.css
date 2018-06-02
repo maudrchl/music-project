@@ -236,6 +236,9 @@ body {
 .changeGenreColor {
   background-color: #fff; }
 
+.touches.active {
+  filter: brightness(300%); }
+
 .img_pad {
   height: 100vh;
   grid: auto; }
@@ -363,23 +366,24 @@ input::placeholder {
 .profile_bar {
   height: 100vh;
   grid-column: 9/12;
-  background-color: #ECECEC;
-  text-align: center; }
+  background-color: #ECECEC; }
 
 .profile_infos {
-  display: grid;
-  grid-column: 10/12;
-  grid-row: 3/12;
-  text-align: center; }
+  text-align: center;
+  padding-top: 130px;
+  font-family: NexaL, sans-serif; }
 
 .pic_profile {
-  display: grid;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  background-color: red; }
+  background-color: #9f9f9f;
+  margin-bottom: 30px; }
+
+.username, .bio, .profile_stats, .config_pad, .see_favorites {
+  padding-bottom: 40px; }
 
 @font-face {
   font-family: NexaH;
