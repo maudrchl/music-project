@@ -25,6 +25,14 @@
         {
             $message = 'Email not found';
         }
+        else if (empty($_POST['email']))
+        {
+            $message = 'Empty email';
+        }
+        else if (empty($_POST['password']))
+        {
+            $message = 'Empty password';
+        }
         else
         {
             if(password_verify($password, $user->password))
@@ -41,7 +49,7 @@
                 $message = 'Wrong password';
             }
         }
-    }
+    } 
 ?>
 <body>
     <div class="container">

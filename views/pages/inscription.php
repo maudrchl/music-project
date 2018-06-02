@@ -13,7 +13,23 @@
             'name' => $user->name,
         ];
 
-        $prepare = $pdo->prepare('
+        if (empty($_POST['email']))
+        {
+            $message = 'Empty email';
+        }
+        else if (empty($_POST['password']))
+        {
+            $message = 'Empty password';
+        } 
+        else if (empty($_POST['name']))
+        {
+            $message = 'Empty username';
+        } 
+        else {
+            $message = 'User registered';
+            header('Location: social');
+
+            $prepare = $pdo->prepare('
             INSERT INTO
                 users (email, password, name)
             VALUES
@@ -23,9 +39,7 @@
         $prepare->bindValue('password', $password);
         $prepare->bindValue('name', $name);
         $prepare->execute();
-
-        $message = 'User registered';
-        header('Location: social');
+        }
     }
 ?>
 
@@ -46,7 +60,7 @@
                     <input type="password" name="password" id="password" placeholder="•••••••••">
                 </div>
                 <div class="last_input">
-                    <label for="name">Name</label>
+                    <label for="name">Username</label>
                     <input type="name" name="name" id="name" placeholder="Pad">
                 </div>
                 <div>
