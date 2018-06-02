@@ -36,8 +36,9 @@ class PadMusic{
         for (this.$button of this.$buttons) {
             this.$button.addEventListener('mousedown', (event) => {
                 event.preventDefault()
-                this.playSound(this.$button.dataset.sound)
-                console.log(this.$button)   
+                if (this.$button) {
+                    this.playSound(this.$button.dataset.sound)
+                }
             })
         }
     
@@ -54,6 +55,7 @@ class PadMusic{
     playSound(soundName){
         const audio = new Audio()
         audio.src = soundName
+        console.log(soundName)
         audio.play()
     }
 
