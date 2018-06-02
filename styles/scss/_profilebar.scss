@@ -1,8 +1,10 @@
 .profile_bar
 {
     height: 100vh;
-    grid-column: 10/13;
+    width: 300px;
     background-color: #ECECEC;
+    position: fixed;
+    right: 0;
 }
 
 .profile_infos
@@ -11,6 +13,8 @@
     padding-top: 130px;
     font-family: NexaL, sans-serif;
     font-size: 17px;
+    width: 250px;
+    margin-left: 25px;
 }
 
 .pic_profile

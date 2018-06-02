@@ -7,9 +7,6 @@
 
 <div class="container">
     <div class="items">
-        <?php
-            include 'navigation.php';
-        ?>
     </div>
     <h1>Your profile</h1>
     <span class="name_login"><?= substr($_SESSION['user']['name'], 0, 45).'.' ?></span>

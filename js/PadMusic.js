@@ -5,6 +5,7 @@ class PadMusic{
         this.keySound()
         // this.playSound()
         this.colorButton()
+        this.changeBckgColor()
     }
 
     initialize(){
@@ -92,5 +93,28 @@ class PadMusic{
             this.$genre1.classList.toggle('genre1:hover')
             })
         }
-    }    
+    }
+
+    changeBckgColor(){
+        this.$button_bckg = document.querySelector('.button_bckg')
+        this.$small_button = document.querySelector('.small_button')
+        this.$bckg = document.querySelector('.pad_background')
+
+        this.$small_button.addEventListener('mousedown', () =>{
+            
+            if(this.$small_button.classList.contains('active')){
+                this.$small_button.classList.remove('active')
+                this.$small_button.style.transform = "translate(0px)"
+                this.$small_button.style.transition = "0.7s ease-in-out"
+                this.$small_button.style.background = "#FFC24B"
+                this.$bckg.style.background = "#000000"
+            } else {
+                this.$small_button.classList.add('active')
+                this.$small_button.style.transform = "translate(-30px)"
+                this.$small_button.style.transition = "0.7s ease-in-out"
+                this.$small_button.style.background = "#000000"
+                this.$bckg.style.background = "#FFFFFF"
+            }
+        })
+    }
 }

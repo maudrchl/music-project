@@ -136,6 +136,9 @@
                 <button class="js-stop">Stop</button>
             </div>
         </div>
+        <div class="button_bckg">
+            <div class="small_button">
+        </div>
         </div>
     </div>
     </div>
@@ -145,7 +148,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/PadMusic.js"></script>
     <script src="js/Record.js"></script>
-    <script src="js/containerScript.js"></script>
+    <script src="js/RecordMicrophone.js"></script>
     <script src="js/main.js"></script>
 
     </html>

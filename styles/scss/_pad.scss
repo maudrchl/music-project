@@ -337,3 +337,29 @@ audio
     background: rgb(182, 182, 182);
     cursor: pointer;
 }
+
+.button_bckg
+{
+    width: 60px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
+    box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
+}
+
+.small_button
+{
+    width: 30px;
+    height: 30px;
+    background: $yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
