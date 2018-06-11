@@ -15,6 +15,7 @@
         <div class="settings_connexion">
             <h2 class="settings_title">Connexion</h2>
         </div>
+        <div class="settings_intro">Edit your informations : </div>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Email..." name="email">
