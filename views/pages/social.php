@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $message = '';
 
     include 'views/partials/header.php';
     include 'views/partials/navigation.php';
@@ -19,11 +20,28 @@
         $username = $query->fetch();
         return $username->name;
     }
-    
+
+    if(!empty($_POST))
+    {
+        if (empty($_POST['email']))
+        {
+            $message = 'Empty thing';
+        } else {
+            $prepare = $pdo->prepare('
+            INSERT INTO
+                posts (user_id, body, stamp)
+            VALUES
+                (:user_id, :body, :stamp)
+        ');
+        $prepare->bindValue('user_id', $user_id);
+        $prepare->bindValue('body', $body);
+        $prepare->bindValue('stamp', $stamp);
+        $prepare->execute();
+        }
+    }
 ?>
 
 <div class="items_socialpage">
-<?php echo $_SESSION["user"]; ?>
     <h1 class="social_title">Your timeline</h1>
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
     <div class="add_post">
