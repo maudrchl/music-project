@@ -19,6 +19,7 @@
     color: rgba(255, 255, 255, 0.5);
     font-family: NexaB, sans-serif;
     text-align: center;
+    transition: filter 0.4s ease-out;
 }
 
 .top_title {
@@ -223,7 +224,7 @@
 .touches.active
 {
     filter: brightness(300%);
-    transition: filter 0.4s ease-out;
+    transition: filter 0.1s ease-out;
 }
 
 audio
