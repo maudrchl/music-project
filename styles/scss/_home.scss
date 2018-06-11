@@ -25,17 +25,16 @@ h1 {
     width: 70%;
     height: 180px;
     background: $grey;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 200px;
+    border-radius: 10px;
 }
 
 .post{
     margin-left: 100px;
-    margin-top: 18px;
-    font-family: NexaL, sans-serif;
     font-size: 16px;
     color: #7E7D7D;
-    text-transform: uppercase;
+    font-family: NexaL, sans-serif;
 }
 
 .pic_home
@@ -45,8 +44,30 @@ h1 {
     margin-left: 30px;
 }
 
+.username_social
+{
+    font-family: NexaH, sans-serif;
+    font-size: 20px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+}
+
 .social_content
 {
     margin-left: 100px;
-    margin-top: -150px
+    margin-top: -150px;
+}
+
+.date_social
+{
+    padding-left: 550px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.post_social
+{
+    display: inline-block;
+    width: 250px;
 }

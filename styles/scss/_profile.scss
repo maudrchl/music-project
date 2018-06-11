@@ -15,13 +15,18 @@
     background: $grey;
     margin-left: 200px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .post{
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 18px;
-    font-family: NexaL, sans-serif;
-    font-size: 16px;
     color: #7E7D7D;
+}
+
+.date_profile
+{
+    padding-left: 500px;
+    font-size: 12px;
     text-transform: uppercase;
 }

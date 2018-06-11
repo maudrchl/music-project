@@ -108,12 +108,14 @@ class PadMusic{
                 this.$small_button.style.transition = "0.7s ease-in-out"
                 this.$small_button.style.background = "#FFC24B"
                 this.$bckg.style.background = "#000000"
+                this.$bckg.style.transition = "background-color 0.7s"
             } else {
                 this.$small_button.classList.add('active')
                 this.$small_button.style.transform = "translate(-30px)"
                 this.$small_button.style.transition = "0.7s ease-in-out"
                 this.$small_button.style.background = "#000000"
                 this.$bckg.style.background = "#FFFFFF"
+                this.$bckg.style.transition = "background-color 0.7s"
             }
         })
     }
