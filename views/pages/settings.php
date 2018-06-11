@@ -19,7 +19,7 @@
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Email..." name="email">
-            <button class="button" type="submit">Entrez</button>
+            <button class="add_button" type="submit">Entrez</button>
         </form>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
