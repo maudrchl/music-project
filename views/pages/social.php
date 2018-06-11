@@ -29,17 +29,22 @@
 <div class="items_socialpage">
 <?php echo $_SESSION["user"]; ?>
     <h1 class="social_title">Your timeline</h1>
-    <h1 class="social_title">Nop</h1>
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
 
     <?php foreach($posts as $_post): ?>
         <div class="items_social">
             <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $_post->user_id?>" width="100" height="100" alt="">
             <div class="social_content">
-                <h2 class="post">user name : <?= get_username($pdo, $_post->user_id) ?></h2>
-                <h2 class="post">user id : <?= $_post->user_id ?></h2>
-                <h2 class="post">message : <?= $_post->body ?></h2>
-                <h2 class="post">date : <?= $_post->stamp ?></h2>
+                <h4 class="post username_social"><?= get_username($pdo, $_post->user_id) ?></h4>
+                <div class="post_social">
+                    <p class="post"><?= $_post->body ?></p> 
+                </div>
+                <h4 class="post date_social">
+                <?php
+                    $originalDate = $_post->stamp;
+                    echo $newDate = date("F j, Y, g:i a", strtotime($originalDate));
+                ?>
+                </h4>
             </div>
         </div>
     <?php endforeach; ?>

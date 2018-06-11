@@ -25,25 +25,40 @@ h2 {
   width: 70%;
   height: 180px;
   background: #E9E9E9;
-  margin-top: 10px;
-  margin-left: 200px; }
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 10px; }
 
 .post {
   margin-left: 100px;
-  margin-top: 18px;
-  font-family: NexaL, sans-serif;
   font-size: 16px;
   color: #7E7D7D;
-  text-transform: uppercase; }
+  font-family: NexaL, sans-serif; }
 
 .pic_home {
   border-radius: 100px;
   margin-top: 40px;
   margin-left: 30px; }
 
+.username_social {
+  font-family: NexaH, sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+  margin-bottom: -10px;
+  text-transform: uppercase; }
+
 .social_content {
   margin-left: 100px;
   margin-top: -150px; }
+
+.date_social {
+  padding-left: 550px;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.post_social {
+  display: inline-block;
+  width: 250px; }
 
 body {
   margin: 10px; }
@@ -150,21 +165,21 @@ body {
 
 .touches_beat {
   display: grid;
-  background-color: #FFC24B;
+  background-color: #ff9720;
   border-radius: 6px;
   height: 70px;
   width: 70px; }
 
 .touches_bass {
   display: grid;
-  background-color: #00CE6A;
+  background-color: #44ecff;
   border-radius: 6px;
   height: 70px;
   width: 70px; }
 
 .touches_melodies {
   display: grid;
-  background-color: #B30000;
+  background-color: #ff63da;
   border-radius: 6px;
   height: 70px;
   width: 70px; }
@@ -531,14 +546,17 @@ h3 {
   height: 180px;
   background: #E9E9E9;
   margin-left: 200px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 10px; }
 
 .post {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 18px;
-  font-family: NexaL, sans-serif;
-  font-size: 16px;
-  color: #7E7D7D;
+  color: #7E7D7D; }
+
+.date_profile {
+  padding-left: 500px;
+  font-size: 12px;
   text-transform: uppercase; }
 
 @font-face {

@@ -7,30 +7,40 @@
     $query = $pdo->query('SELECT * FROM followers');
     $followers = $query->fetchAll();
 
-    $query = $pdo->query('SELECT * FROM posts');
+    $user_id = $_SESSION["id"];
+    $query = $pdo->query("SELECT * FROM posts WHERE user_id = '$user_id'");
     $posts = $query->fetchAll();
+
+    function get_username($pdo, $id) {
+        $query = $pdo->query("SELECT * FROM users WHERE id = $id");
+        $username = $query->fetch();
+        return $username->name;
+    }
 ?>
+
 <div class="items_profilepage">
-    <div class="items">
-        <?php
-            include 'navigation.php';
-        ?>
-    </div>
-    <h1 class="profile_title">Your profile</h1>
-    <div class="items_profile">
-        <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
-        <?php foreach($posts as $_post): ?>
-        <?php foreach($followers as $_follower): ?>
-        <?php if($_post->user_id ===  $_follower->user_id){?>
-            <div class="items_profile">
-                <h2 class="post"><?= $_post->body ?></h2>
-                <h2 class="post"><?= $_post->stamp ?></h2>
-                <h2 class="post"><?= $_post->user_id ?></h2>
+<?php echo $_SESSION["user"]; ?>
+    <h1 class="social_title">Your profile</h1>
+    <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
+
+    <?php foreach($posts as $_post): ?>
+        <div class="items_profile">
+            <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $_post->user_id?>" width="100" height="100" alt="">
+            <div class="social_content">
+                <h2 class="post username_social"><?= get_username($pdo, $_post->user_id) ?></h2>
+                <h2 class="post">message : <?= $_post->body ?></h2>
+                <h2 class="post date_profile">
+                <?php
+                    $originalDate = $_post->stamp;
+                    echo $newDate = date("F j, Y, g:i a", strtotime($originalDate));
+                ?>
+                </h2>
             </div>
-        <?php } ?>
-        <?php endforeach; ?>
-        <?php endforeach; ?>
-    </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+
+
 </body>
 <script src="js/main.js"></script>
 </html>
