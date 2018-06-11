@@ -17,6 +17,10 @@ h1 {
   font-size: 30px;
   font-family: NexaH, sans-serif; }
 
+h2 {
+  font-size: 24px;
+  font-family: NexaH, sans-serif; }
+
 .items_social {
   width: 70%;
   height: 180px;
@@ -375,11 +379,6 @@ audio {
   width: 420px;
   margin-left: 100px; }
 
-form {
-  text-align: left;
-  margin-left: 200px;
-  margin-top: 40px; }
-
 label {
   display: block;
   font-family: NexaL, sans-serif;
@@ -445,6 +444,11 @@ input::placeholder {
   grid-row: 4/7;
   margin-top: -40px; }
 
+.maud_jtm {
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 40px; }
+
 .inscription {
   width: 220px;
   height: 50px;
@@ -462,15 +466,14 @@ input::placeholder {
 
 .settings {
   width: 75%;
-  height: 20%;
+  height: 200px;
   background: #E9E9E9;
   margin-left: 15%;
-  cursor: pointer; }
-  .settings h3 {
-    padding-top: 22px; }
+  cursor: pointer;
+  margin-bottom: 5%; }
 
-.settings.active {
-  height: 300px; }
+h3 {
+  padding-top: 22px; }
 
 .subsettings {
   width: 100%;
@@ -478,8 +481,11 @@ input::placeholder {
   background: red;
   display: none; }
 
-.setting1 {
-  margin-top: 150px; }
+.settings_connexion {
+  margin-left: 10%; }
+
+.settings_title {
+  padding-top: 1%; }
 
 .profile_bar {
   height: 100vh;

@@ -1,25 +1,15 @@
 .settings{
     width: 75%;
-    height: 20%;
+    height: 200px;
     background: $grey;
     margin-left: 15%;
     cursor:pointer;
-
-    h3
-    {
-        padding-top: 22px;
-    }
-
-    // .arrow_settings
-    // {
-    //     position: relative;
-    //     margin-left: 90%;
-    // }
+    margin-bottom: 5%; 
 }
 
-.settings.active
+h3
 {
-    height: 300px;
+    padding-top: 22px;
 }
 
 .subsettings
@@ -30,7 +20,10 @@
     display: none;
 }
 
-.setting1
-{
-    margin-top: 150px;
+.settings_connexion {
+    margin-left: 10%;
+}
+
+.settings_title {
+    padding-top: 1%;
 }

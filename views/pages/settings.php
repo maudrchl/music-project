@@ -11,21 +11,40 @@
     <h1>Settings</h1>
     <span class="name_login"><?= substr($_SESSION['user']['name'], 0, 45).'.' ?></span>
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
-    <div class="items settings setting1">
-    <!-- <img class="arrow_settings" src="assets/img/next.svg" width=20>     -->
+    <div class="settings setting1">
+        <div class="settings_connexion">
+            <h2 class="settings_title">Connexion</h2>
+        </div>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Email..." name="email">
+            <button class="button" type="submit">Entrez</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Mot de passe..." name="mot de passe">
+            <button class="button" type="submit">Entrez</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Pseudonyme..." name="pseudonyme">
+            <button class="button" type="submit">Entrez</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Description..." name="description">
+            <button class="button" type="submit">Entrez</button>
+        </form>
+
+
+
+
+    </div>
+    <div class="settings setting2">
         <h3>General</h3>
     </div>
-    <div class="settings">
-        <h3>Security</h3>
-    </div>
-    <div class="settings">
-        <h3>Language</h3>
-    </div>
-    <div class="settings">
-        <h3>Notifications</h3>
-    </div>
-    <div class="settings">
-        <h3>Contact</h3>
+    <div class="settings setting3">
+        <h3>General</h3>
     </div>
 </div>
 </body>
