@@ -1,63 +1,654 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 86 of /Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/_home.scss
-        from line 2 of /Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/main.scss
+:root {
+  --black: #292929; }
 
-81: 
-82: .post_social
-83: {
-84:     display: inline-block;
-85:     width: 250px;
-86: }
+.container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  font-size: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+  grid-gap: 20px; }
 
-Backtrace:
-/Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/_home.scss:86
-/Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/main.scss:2
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 86 of /Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/_home.scss\A         from line 2 of /Users/maud_rchl/Desktop/STUFF/DEV WORKS/music-project/styles/scss/main.scss\A \A 81: \A 82: .post_social\A 83: {\A 84:     display: inline-block;\A 85:     width: 250px;\A 86: }"; }
+h1 {
+  margin-left: 200px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-family: NexaH, sans-serif; }
+
+.add_post {
+  width: 70%;
+  height: 80px;
+  background: #E9E9E9;
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 10px; }
+
+.add_msg {
+  width: 60%;
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: NexaL;
+  color: grey;
+  padding-left: 30px;
+  display: block; }
+
+.add_button {
+  width: 70px;
+  height: 40px;
+  background: #FFC24B;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-family: NexaB;
+  font-size: 16px;
+  padding-top: 2px;
+  box-shadow: none;
+  display: inline-block; }
+
+.add_msg:focus {
+  outline: 0; }
+
+.add_button:focus {
+  outline: 0; }
+
+h2 {
+  font-size: 24px;
+  font-family: NexaH, sans-serif; }
+
+.items_social {
+  width: 70%;
+  height: 180px;
+  background: #E9E9E9;
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 10px; }
+
+.post {
+  margin-left: 100px;
+  font-size: 16px;
+  color: #7E7D7D;
+  font-family: NexaL, sans-serif; }
+
+.pic_home {
+  border-radius: 100px;
+  margin-top: 40px;
+  margin-left: 30px; }
+
+.username_social {
+  font-family: NexaH, sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+  margin-bottom: -10px;
+  text-transform: uppercase; }
+
+.social_content {
+  margin-left: 100px;
+  margin-top: -150px; }
+
+.date_social {
+  padding-left: 550px;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.post_social {
+  display: inline-block;
+  width: 250px; }
+
+body {
+  margin: 10px; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: grid;
+  width: 100px;
+  height: 100vh;
+  grid-template-rows: repeat(4, 4fr);
+  overflow: hidden; }
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  /* best colour */ }
+
+.item.active {
+  background: #101010; }
+
+.pad_background {
+  height: 100vh;
+  display: grid;
+  grid-column: 2 / 14;
+  background-color: #010101;
+  margin-left: -24px; }
+
+.pad {
+  display: grid;
+  grid-column: 4 / 11;
+  grid-row: 2 / 11;
+  border-radius: 24px;
+  background-color: #252525; }
+
+.top_title {
+  color: white;
+  margin-top: 20px;
+  font-family: NexaL, sans-serif; }
+
+.top_title_beats {
+  grid-column: 3 / 12;
+  grid-row: 1 / 8; }
+
+.top_title_bass {
+  grid-column: 6 / 11;
+  grid-row: 1 / 8; }
+
+.top_title_melodies {
+  grid-column: 8 / 11;
+  grid-row: 1 / 8;
+  margin-left: -10px; }
+
+.options {
+  grid-column: 11 / 11;
+  grid-row: 3 / 8; }
+
+.options_img {
+  width: 22%; }
+
+.loop {
+  grid-row: 1 / 8;
+  margin-top: 50px;
+  color: #ADADAD;
+  font-family: NexaL, sans-serif;
+  font-size: 16px; }
+
+.loop_beats {
+  grid-column: 3 / 9; }
+
+.loop_bass {
+  grid-column: 6 / 9; }
+
+.loop_melodies {
+  grid-column: 8 / 10; }
+
+.left_buttons {
+  grid-column: 1;
+  grid-row: 3 / 10;
+  margin-left: 20px;
+  display: grid; }
+
+.play {
+  grid-row: 2 / 7;
+  grid-column: 1; }
+
+.rec {
+  grid-row: 3 / 7;
+  grid-column: 1; }
+
+.stop {
+  grid-row: 4 / 7;
+  grid-column: 1; }
+
+.loop_song {
+  grid-row: 5 / 7;
+  grid-column: 1; }
+
+.delete {
+  grid-row: 6 / 7;
+  grid-column: 1; }
+
+.touches_beat {
+  display: grid;
+  background-color: #ff9720;
+  border-radius: 6px;
+  height: 70px;
+  width: 70px; }
+
+.touches_bass {
+  display: grid;
+  background-color: #44ecff;
+  border-radius: 6px;
+  height: 70px;
+  width: 70px; }
+
+.touches_melodies {
+  display: grid;
+  background-color: #ff63da;
+  border-radius: 6px;
+  height: 70px;
+  width: 70px; }
+
+.left_touche_beats {
+  grid-column: 1; }
+
+.left_touches_container_beats {
+  grid-column: 3 / 11;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.right_touches_container_beats {
+  grid-column: 4 / 11;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.left_touches_container_bass {
+  grid-column: 5 / 11;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.right_touches_container_bass {
+  grid-column: 6 / 11;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.left_touches_container_melodies {
+  grid-column: 7 / 11;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.right_touches_container_melodies {
+  grid-column: 8 / 8;
+  grid-row: 1;
+  display: grid;
+  grid-gap: 10px; }
+
+.touches_container {
+  display: grid;
+  grid-column: 1 / 12;
+  grid-row: 6;
+  margin-top: 20px; }
+
+.song_select {
+  display: grid;
+  grid-column: 10 / 12;
+  grid-row: 6;
+  grid-gap: 10px;
+  margin-top: 20px; }
+
+.genre {
+  border-radius: 6px;
+  transform: translateX(-20px); }
+
+.genre:hover {
+  background-color: #c7c7c7; }
+
+.genre1:hover {
+  background-color: #fff; }
+
+.pop_select {
+  grid-row: 1;
+  background-color: #4B4B4B; }
+
+.rock_select {
+  grid-row: 2;
+  background-color: #4B4B4B; }
+
+.house_select {
+  grid-row: 3;
+  background-color: #4B4B4B; }
+
+.changeGenreColor {
+  background-color: #fff; }
+
+.touches.active {
+  filter: brightness(300%);
+  transition: filter 0.4s ease-out; }
+
+audio {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.audio2 {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start2 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start2:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop2 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop2:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.audio3 {
+  width: 180px;
+  margin-right: -100px;
+  margin-left: 5px; }
+
+.js-start3 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 20px auto 0 auto;
+  border-radius: 60px; }
+
+.js-start3:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.js-stop3 {
+  padding: 10px 30px;
+  display: block;
+  background: #e8e8e8;
+  border: none;
+  margin: 10px auto -130px auto;
+  border-radius: 60px; }
+
+.js-stop3:hover {
+  background: #b6b6b6;
+  cursor: pointer; }
+
+.button_bckg {
+  width: 60px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 6px 38px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 6px 38px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 38px -8px rgba(0, 0, 0, 0.4); }
+
+.small_button {
+  width: 30px;
+  height: 30px;
+  background: #FFC24B;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  cursor: pointer; }
+
+.img_pad {
+  height: 100vh;
+  grid: auto; }
+
+.form {
+  grid-column: 7/12;
+  grid-row: 2/10;
+  text-align: center; }
+
+.login_title {
+  font-size: 30px;
+  font-family: NexaH, sans-serif;
+  text-align: center; }
+
+.form p {
+  font-family: NexaL, sans-serif;
+  font-size: 14px;
+  width: 420px;
+  margin-left: 100px; }
+
+label {
+  display: block;
+  font-family: NexaL, sans-serif;
+  margin-top: 40px;
+  cursor: pointer; }
+
+input {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 15px; }
+
+input::placeholder {
+  font-family: NexaL, sans-serif; }
+
+.submit {
+  width: 206px;
+  height: 50px;
+  background: #FFC24B;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: NexaH, sans-serif;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.signup {
+  padding: 15px 68px;
+  border: 1px solid #FFC24B;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: NexaH, sans-serif;
+  color: #FFC24B;
+  text-decoration: none;
+  cursor: pointer; }
+
+.message {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: NexaL, sans-serif;
+  color: red; }
+
+.yellow_border {
+  width: 100%;
+  height: 50px;
+  background: #FFC24B;
+  position: fixed;
+  top: 0; }
+
+.inscription_main {
+  grid-column: 3/10;
+  grid-row: 2/9; }
+
+.inscription_title {
+  font-size: 30px;
+  font-family: NexaH, sans-serif;
+  text-align: center; }
+
+.form_inscription {
+  grid-column: 4/9;
+  grid-row: 4/7;
+  margin-top: -40px; }
+
+.maud_jtm {
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 40px; }
+
+.inscription {
+  width: 220px;
+  height: 50px;
+  background: #FFC24B;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: NexaH, sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.last_input {
+  margin-bottom: 40px; }
+
+.settings {
+  width: 75%;
+  height: 200px;
+  background: #E9E9E9;
+  margin-left: 15%;
+  cursor: pointer;
+  margin-bottom: 5%; }
+
+h3 {
+  padding-top: 22px; }
+
+.subsettings {
+  width: 100%;
+  height: 600px;
+  background: red;
+  display: none; }
+
+.settings_connexion {
+  margin-left: 10%; }
+
+.settings_title {
+  padding-top: 1%; }
+
+.profile_bar {
+  height: 100vh;
+  width: 300px;
+  background-color: #ECECEC;
+  position: fixed;
+  right: 0; }
+
+.profile_infos {
+  text-align: center;
+  padding-top: 130px;
+  font-family: NexaL, sans-serif;
+  font-size: 17px;
+  width: 250px;
+  margin-left: 25px; }
+
+.pic_profile {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #9f9f9f;
+  margin-bottom: 30px;
+  border-radius: 100px; }
+
+.username, .bio, .profile_stats, .config_pad, .see_favorites {
+  padding-bottom: 40px; }
+
+.bar_infos {
+  padding-bottom: 10px; }
+
+.bio {
+  line-height: 22px; }
+
+:root {
+  --black: #292929; }
+
+.profile_title {
+  margin-left: 200px;
+  font-size: 30px;
+  font-family: NexaH, sans-serif; }
+
+.items_profile {
+  width: 60%;
+  height: 180px;
+  background: #E9E9E9;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+
+.post {
+  margin-left: 80px;
+  margin-top: 18px;
+  color: #7E7D7D; }
+
+.date_profile {
+  padding-left: 500px;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+@font-face {
+  font-family: NexaH;
+  src: url(../assets/fonts//NexaBlack.otf); }
+@font-face {
+  font-family: NexaL;
+  src: url(../assets/fonts//Nexa-Light.otf); }
+@font-face {
+  font-family: NexaB;
+  src: url(../assets/fonts//NexaBlack.otf); }
+body {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  color: black; }
+
+.name_login {
+  position: absolute;
+  right: 160px;
+  top: 62px;
+  font-family: NexaH, sans-serif; }
+
+.off {
+  position: fixed;
+  right: 140px;
+  top: 60px;
+  cursor: pointer; }
+
+.text_404 {
+  text-align: center;
+  font-family: NexaL, sans-serif;
+  margin-top: 10px; }
+
+.link_404 {
+  text-decoration: none;
+  font-family: NexaB, sans-serif;
+  color: #FFC24B; }
+
+.title_404 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 150px;
+  color: #FFC24B;
+  font-family: NexaB, sans-serif;
+  text-align: center; }
+
+.img_404 {
+  width: 50px;
+  margin-left: 50%;
+  margin-top: 100px; }

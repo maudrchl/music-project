@@ -32,8 +32,8 @@
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
     <div class="add_post">
         <form class="form_add" action="#" method="post">
-            <input type="text" placeholder="Write your message here..." name="email">
-            <button class="button" type="submit">Entrez</button>
+            <input type="text" placeholder="Write your message here..." class="add_msg">
+            <button class="add_button" type="submit">SEND</button>
         </form>
     </div>
     <?php foreach($posts as $_post): ?>
