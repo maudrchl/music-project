@@ -19,22 +19,22 @@
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Email..." name="email">
-            <button class="add_button" type="submit">Entrez</button>
+            <button class="add_buttonII" type="submit">Modifier</button>
         </form>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Mot de passe..." name="mot de passe">
-            <button class="button" type="submit">Entrez</button>
+            <button class="add_buttonII" type="submit">Modifier</button>
         </form>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Pseudonyme..." name="pseudonyme">
-            <button class="button" type="submit">Entrez</button>
+            <button class="add_buttonII" type="submit">Modifier</button>
         </form>
         <!-- email -->
-        <form class="form_settings" action="#" method="post">
+        <form class="form_settings form_settingsII" action="#" method="post">
             <input type="text" placeholder="Description..." name="description">
-            <button class="button" type="submit">Entrez</button>
+            <button class="add_buttonII" type="submit">Modifier</button>
         </form>
 
 
@@ -42,7 +42,31 @@
 
     </div>
     <div class="settings setting2">
-        <h3>General</h3>
+    <div class="settings_connexion">
+            <h2 class="settings_title">Connexion</h2>
+        </div>
+        <div class="settings_intro">Edit your informations : </div>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Email..." name="email">
+            <button class="add_buttonII" type="submit">Modifier</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Mot de passe..." name="mot de passe">
+            <button class="add_buttonII" type="submit">Modifier</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Pseudonyme..." name="pseudonyme">
+            <button class="add_buttonII" type="submit">Modifier</button>
+        </form>
+        <!-- email -->
+        <form class="form_settings form_settingsII" action="#" method="post">
+            <input type="text" placeholder="Description..." name="description">
+            <button class="add_buttonII" type="submit">Modifier</button>
+        </form>
+
     </div>
     <div class="settings setting3">
         <h3>General</h3>
