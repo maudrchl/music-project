@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     $message = '';
 
     if(!empty($_POST))
@@ -27,7 +27,15 @@
         } 
         else {
             $message = 'User registered';
-            header('Location: social');
+            session_start();
+
+            $query = $pdo->query("SELECT * FROM users WHERE email = '$email'");
+            $user_id = $query->fetchAll();
+
+            $_SESSION["user"] = $email;
+            $_SESSION["id"] = $user_id->id;
+
+            header("Location: social");
 
             $prepare = $pdo->prepare('
             INSERT INTO

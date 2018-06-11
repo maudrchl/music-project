@@ -17,15 +17,6 @@
                     <img class="options_img" src="assets/img/rouage.svg" alt="options">
                 </a>
             </div>
-            <div class="loop loop_beats">
-                <img src="assets/img/loop.svg" alt="loop"> loop
-            </div>
-            <div class="loop loop_bass">
-                <img src="assets/img/loop.svg" alt="loop"> loop
-            </div>
-            <div class="loop loop_melodies">
-                <img src="assets/img/loop.svg" alt="loop"> loop
-            </div>
             <div class="left_buttons">
                 <div class="play">
                     <a><img src="assets/img/play.svg" alt="play"></a>

@@ -8,7 +8,7 @@
 
 .pad {
     display: grid;
-    grid-column: 4 / 11;
+    grid-column: 4 / 12;
     grid-row: 2 / 11;
     border-radius: 24px;
     background-color: #252525;
@@ -16,7 +16,7 @@
 
 .top_title {
     color: white;
-    margin-top: 20px;
+    margin-top: 60px;
     font-family: NexaL, sans-serif;
 }
 
@@ -176,7 +176,7 @@
 
 .song_select {
     display: grid;
-    grid-column: 10 / 12;
+    grid-column: 11 / 13;
     grid-row: 6;
     grid-gap: 10px;
     margin-top: 20px;
