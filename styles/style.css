@@ -558,12 +558,19 @@ h3 {
   text-align: center;
   padding: 3%; }
 
-.form_settingsII {
+.form_settingsI {
   padding-bottom: 5%; }
+
+.form_settingsII {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%; }
 
 .settings_intro {
   font-size: 18px;
-  margin-left: 6%; }
+  margin-left: 6%;
+  font-family: NexaL; }
 
 .add_buttonII {
   width: 90px;
@@ -578,6 +585,12 @@ h3 {
   box-shadow: none;
   display: inline-block;
   transform: translateY(-2px); }
+
+.settings_label {
+  font-size: 15px;
+  margin-top: 0;
+  display: flex;
+  left: 100px; }
 
 .profile_bar {
   height: 100vh;
