@@ -1,5 +1,7 @@
 <?php
     $user_id = $_SESSION["id"];
+    $query = $pdo->query("SELECT * FROM users WHERE id = $user_id");
+    $users = $query->fetch();
 ?>
 
 <div class="profile_bar">

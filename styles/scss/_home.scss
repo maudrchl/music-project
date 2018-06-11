@@ -43,7 +43,7 @@ h1 {
     font-family: NexaL;
     color: grey;
     padding-left: 30px;
-    display: block;
+    display: inline-block;
 }
 
 .add_button
@@ -60,6 +60,7 @@ h1 {
     box-shadow: none;
     display: inline-block;
     cursor: pointer;
+    border: none;
 }
 
 .add_msg:focus {outline:0;}
@@ -111,7 +112,10 @@ h2 {
 
 .date_social
 {
-    padding-left: 550px;
+    display: inline-block;
+    width: 180px;
+    padding-left: 70%;
+    padding-bottom: 5px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -119,5 +123,6 @@ h2 {
 .post_social
 {
     display: inline-block;
-    width: 250px;
+    width: 80%;
+    margin-bottom: -10px;
 }

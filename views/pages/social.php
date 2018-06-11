@@ -14,10 +14,6 @@
     $query = $pdo->query("SELECT * FROM posts WHERE user_id != '$user_id'");
     $posts = $query->fetchAll();
 
-    echo '<pre>';
-    print_r($posts);
-    echo '<pre>';
-
     function get_username($pdo, $id) {
         $query = $pdo->query("SELECT * FROM users WHERE id = $id");
         $username = $query->fetch();
