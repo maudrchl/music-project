@@ -38,11 +38,11 @@
                 <?php foreach($users as $_user): ?>
                 <?php if($_user->id === $_post->user_id){?>
                     <h2 class="post">user name : <?= $_user->name ?></h2>
-                <?php } ?>
-                <?php endforeach; ?>
                 <h2 class="post">user id : <?= $_post->user_id ?></h2>
                 <h2 class="post">message : <?= $_post->body ?></h2>
-                <h2 class="post">date : <?= $_SESSION["user"]?></h2>
+                <h2 class="post">date : <?= $_post->stamp ?></h2>
+                <?php } ?>
+                <?php endforeach; ?>
             <div>
         </div>
     <?php endforeach; ?>
