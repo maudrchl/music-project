@@ -25,6 +25,39 @@ h1 {
   margin-left: 200px;
   border-radius: 10px; }
 
+.add_msg {
+  width: 60%;
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: NexaL;
+  color: grey;
+  padding-left: 30px;
+  display: block; }
+
+.add_button {
+  width: 70px;
+  height: 40px;
+  background: #FFC24B;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-family: NexaB;
+  font-size: 16px;
+  padding-top: 2px;
+  box-shadow: none;
+  display: inline-block; }
+
+.add_msg:focus {
+  outline: 0; }
+
+.add_button:focus {
+  outline: 0; }
+
 h2 {
   font-size: 24px;
   font-family: NexaH, sans-serif; }
