@@ -1,15 +1,11 @@
 <?php
-
-// Session
-session_start();
-
 // Salt
 define('SALT', 'AUYB28 3:a"ç');
 
 // Connexion variables
 define('DB_HOST', 'localhost');
 define('DB_PORT', '8888');
-define('DB_NAME', 'music-project');
+define('DB_NAME', 'music');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
 

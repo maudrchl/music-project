@@ -1,0 +1,27 @@
+:root {
+    --black: #292929;
+}
+
+.profile_title {
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: NexaH, sans-serif;
+}
+
+.items_profile
+{
+    width: 60%;
+    height: 180px;
+    background: $grey;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.post{
+    margin-left: 100px;
+    margin-top: 18px;
+    font-family: NexaL, sans-serif;
+    font-size: 16px;
+    color: #7E7D7D;
+    text-transform: uppercase;
+}

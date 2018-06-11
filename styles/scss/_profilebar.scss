@@ -26,9 +26,15 @@
     border-radius: 50%;
     background-color: rgb(159, 159, 159);
     margin-bottom: 30px;
+    border-radius: 100px;
 }
 
 .username, .bio, .profile_stats, .config_pad, .see_favorites
 {
     padding-bottom: 40px;
+}
+
+.bar_infos
+{
+    padding-bottom: 10px;
 }

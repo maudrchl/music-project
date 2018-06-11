@@ -216,6 +216,7 @@
 .touches.active
 {
     filter: brightness(300%);
+    transition: filter 0.4s ease-out;
 }
 
 audio

@@ -28,14 +28,14 @@
             </div>
             <div class="left_buttons">
                 <div class="play">
-                    <button><img src="assets/img/play.svg" alt="play"></button>
+                    <a><img src="assets/img/play.svg" alt="play"></a>
                 </div>
                 <div class="rec">
-                    <button class="btn btn-primary"><img src="assets/img/rec.svg" alt="rec"></button>
+                    <a class="btn btn-primary"><img src="assets/img/rec.svg" alt="rec"></a>
                 </div>
                 <div class="stop">
                     <a href="#">
-                    <button class="btn btn-warning"><img src="assets/img/stop.svg" alt="stop"></button>
+                    <a class="btn btn-warning"><img src="assets/img/stop.svg" alt="stop"></a>
                     </a>
                 </div>
                 <div class="loop_song">

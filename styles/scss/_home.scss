@@ -13,9 +13,9 @@
 }
 
 h1 {
-    position: absolute;
-    left: 220px;
-    top:40px;
+    margin-left: 200px;
+    margin-top: 70px;
+    margin-bottom: 60px;
     font-size: 30px;
     font-family: NexaH, sans-serif;
 }
@@ -25,20 +25,27 @@ h1 {
     width: 70%;
     height: 180px;
     background: $grey;
-    margin-left: 200px;
-    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
-.item_social1
-{
-    margin-top: 150px;
-}
-
-h3{
+.post{
     margin-left: 100px;
     margin-top: 18px;
     font-family: NexaL, sans-serif;
     font-size: 16px;
     color: #7E7D7D;
     text-transform: uppercase;
+}
+
+.pic_home
+{
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.social_content
+{
+    margin-left: 50px;
+    margin-top: -130px
 }

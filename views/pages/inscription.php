@@ -68,6 +68,8 @@
                 </div>
                 <p class="message"><?= $message ?></p>
             </form>
+            <p class="text_404">Already an account ?</p>
+            <p class="text_404"><a href="login" class="link_404">LOG IN</a></p>
         </div>
     </div>
 </body>

@@ -20,7 +20,8 @@
                 include "views/pages/settings.php";
                 break;
             case 'logout':
-                include "views/pages/logout.php";
+                session_destroy();
+                header('Location: login');exit();
                 break;
             case 'inscription':
                 include "views/pages/inscription.php";

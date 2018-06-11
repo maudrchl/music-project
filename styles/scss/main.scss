@@ -6,6 +6,7 @@
 @import "inscription";
 @import "settings";
 @import "profilebar";
+@import "profile";
 
 @font-face {
     font-family: NexaH;
@@ -38,8 +39,39 @@ body{
 
 .off
 {
-    position: absolute;
-    right: 125px;
+    position: fixed;
+    right: 140px;
     top: 60px;
     cursor: pointer;
+}
+
+.text_404
+{
+    text-align: center;
+    font-family: NexaL, sans-serif;
+    margin-top: 10px;
+}
+
+.link_404
+{
+    text-decoration: none;
+    font-family: NexaB, sans-serif;
+    color: $yellow;
+}
+
+.title_404
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 150px;
+    color: $yellow;
+    font-family: NexaB, sans-serif;
+    text-align: center;
+}
+
+.img_404
+{
+    width: 50px;
+    margin-left: 50%;
+    margin-top: 100px;
 }
