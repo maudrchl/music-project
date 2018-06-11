@@ -19,22 +19,22 @@
         <!-- email -->
         <form class="form_settings" action="#" method="post">
             <input type="text" placeholder="Email..." name="email">
-            <button class="add_buttonII" type="submit">Modifier</button>
+            <button class="add_buttonII" type="submit">Edit</button>
+        </form>
+        <!-- mdp -->
+        <form class="form_settings" action="#" method="post">
+            <input type="text" placeholder="Password" name="mot de passe">
+            <button class="add_buttonII" type="submit">Edit</button>
         </form>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
-            <input type="text" placeholder="Mot de passe..." name="mot de passe">
-            <button class="add_buttonII" type="submit">Modifier</button>
-        </form>
-        <!-- email -->
-        <form class="form_settings" action="#" method="post">
-            <input type="text" placeholder="Pseudonyme..." name="pseudonyme">
-            <button class="add_buttonII" type="submit">Modifier</button>
+            <input type="text" placeholder="Pseudo" name="pseudo">
+            <button class="add_buttonII" type="submit">Edit</button>
         </form>
         <!-- email -->
         <form class="form_settings form_settingsII" action="#" method="post">
             <input type="text" placeholder="Description..." name="description">
-            <button class="add_buttonII" type="submit">Modifier</button>
+            <button class="add_buttonII" type="submit">Edit</button>
         </form>
 
 
@@ -43,33 +43,33 @@
     </div>
     <div class="settings setting2">
     <div class="settings_connexion">
-            <h2 class="settings_title">Connexion</h2>
+            <h2 class="settings_title">Security</h2>
         </div>
         <div class="settings_intro">Edit your informations : </div>
-        <!-- email -->
+        <!-- pseudo -->
         <form class="form_settings" action="#" method="post">
-            <input type="text" placeholder="Email..." name="email">
-            <button class="add_buttonII" type="submit">Modifier</button>
+            <input type="radio" placeholder="Profile private" name="pseudo">
+            <button class="add_buttonII" type="submit">Edit</button>
         </form>
-        <!-- email -->
+        <!-- description -->
         <form class="form_settings" action="#" method="post">
-            <input type="text" placeholder="Mot de passe..." name="mot de passe">
-            <button class="add_buttonII" type="submit">Modifier</button>
-        </form>
-        <!-- email -->
-        <form class="form_settings" action="#" method="post">
-            <input type="text" placeholder="Pseudonyme..." name="pseudonyme">
-            <button class="add_buttonII" type="submit">Modifier</button>
-        </form>
-        <!-- email -->
-        <form class="form_settings form_settingsII" action="#" method="post">
-            <input type="text" placeholder="Description..." name="description">
-            <button class="add_buttonII" type="submit">Modifier</button>
+            <input type="radio" placeholder="Description.." name="description">
+            <button class="add_buttonII" type="submit">Edit</button>
         </form>
 
     </div>
     <div class="settings setting3">
-        <h3>General</h3>
+    <div class="settings_connexion">
+            <h2 class="settings_title">Newsletter</h2>
+        </div>
+        <div class="settings_intro">Do you want to receive our weekly newsletter ? </div>
+        <!-- newletter -->
+        <form class="form_settings" action="#" method="post">
+            <input type="radio" placeholder="Profile private" name="pseudo">
+            <label for="#">Profile Public</label>
+            <label for="#">Profile Private</label>
+            <button class="add_buttonII" type="submit">Edit</button>
+        </form>
     </div>
 </div>
 </body>
