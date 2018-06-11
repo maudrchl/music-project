@@ -28,16 +28,24 @@ h3
 
 .form_settings {
     text-align: center;
-    padding: 3%;    
+    padding: 3%;
+}
+
+.form_settingsI {
+    padding-bottom: 5%;
 }
 
 .form_settingsII {
-    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
 }
 
 .settings_intro {
     font-size: 18px;
     margin-left: 6%;
+    font-family: NexaL;
 }
 
 .add_buttonII
@@ -54,4 +62,15 @@ h3
     box-shadow: none;
     display: inline-block;
     transform: translateY(-2px);
+}
+
+.settings_label {
+    font-size: 15px;
+    margin-top: 0;
+    display: flex;
+    left: 100px;
+}
+
+.settings_input {
+    
 }
