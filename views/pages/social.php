@@ -29,6 +29,7 @@
 <div class="items_socialpage">
 <?php echo $_SESSION["user"]; ?>
     <h1 class="social_title">Your timeline</h1>
+    <h1 class="social_title">Nop</h1>
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
 
     <?php foreach($posts as $_post): ?>
