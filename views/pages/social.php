@@ -30,7 +30,12 @@
 <?php echo $_SESSION["user"]; ?>
     <h1 class="social_title">Your timeline</h1>
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
-
+    <div class="add_post">
+        <form class="form_add" action="#" method="post">
+            <input type="text" placeholder="Write your message here..." name="email">
+            <button class="button" type="submit">Entrez</button>
+        </form>
+    </div>
     <?php foreach($posts as $_post): ?>
         <div class="items_social">
             <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $_post->user_id?>" width="100" height="100" alt="">
