@@ -12,7 +12,7 @@
     $followers = $query->fetchAll();
 
     $user_id = $_SESSION["id"];
-    $query = $pdo->query("SELECT * FROM posts WHERE user_id != '$user_id'");
+    $query = $pdo->query("SELECT * FROM posts");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
@@ -21,24 +21,32 @@
         return $username->name;
     }
 
-    if(!empty($_POST))
-    {
-        if (empty($_POST['email']))
-        {
-            $message = 'Empty thing';
-        } else {
-            $prepare = $pdo->prepare('
-            INSERT INTO
-                posts (user_id, body, stamp)
-            VALUES
-                (:user_id, :body, :stamp)
-        ');
-        $prepare->bindValue('user_id', $user_id);
-        $prepare->bindValue('body', $body);
-        $prepare->bindValue('stamp', $stamp);
-        $prepare->execute();
-        }
-    }
+
+    //     if(isset($_POST['send'])){
+    //         $text = $_POST['text'];
+            
+    //         if (empty($text))
+    //         {
+    //             $message = 'No name';
+    //         } else {
+    //             $prepare = $pdo->prepare('
+    //             INSERT INTO
+    //                 posts (body)
+    //             VALUES
+    //                 (:body)
+    //         ');
+
+    //         $prepare->bindValue('body', $body);
+
+    //         $prepare->execute();
+    //         header("Location:social");
+    //     }
+    // }
+    // else
+    // {
+    //     $_POST['text'] = '';     
+    // }
+
 ?>
 
 <div class="items_socialpage">
@@ -46,8 +54,8 @@
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
     <div class="add_post">
         <form class="form_add" action="#" method="post">
-            <input type="text" placeholder="Write your message here..." class="add_msg">
-            <button class="add_button" type="submit">SEND</button>
+            <input type="text" placeholder="Write your message here..." class="add_msg" name="text">
+            <input class="add_button" type="submit" value="SEND" name="send"></button>
         </form>
     </div>
     <?php foreach($posts as $_post): ?>
