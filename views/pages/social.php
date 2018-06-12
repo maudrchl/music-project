@@ -4,6 +4,8 @@
 
     include 'views/partials/header.php';
     include 'views/partials/navigation.php';
+    include 'views/partials/form.php';
+
 
     $query = $pdo->query('SELECT * FROM users');
     $users = $query->fetchAll();
@@ -21,32 +23,31 @@
         return $username->name;
     }
 
+// if(isset($_POST['send']))
+//     {
+//         if(empty($_POST['text'])){
+//             echo $message = "No text";
+//         } else {
+//             echo '<pre>';
+//             print_r($_POST['text']);
+//             echo '</pre>';
+//             // $prepare = $pdo->prepare('
+//             //     INSERT INTO
+//             //         posts (id, user_id, body, stamp)
+//             //     VALUES
+//             //         (:id, :user_id, :body; :stamp)
+//             // ');
 
-    //     if(isset($_POST['send'])){
-    //         $text = $_POST['text'];
-            
-    //         if (empty($text))
-    //         {
-    //             $message = 'No name';
-    //         } else {
-    //             $prepare = $pdo->prepare('
-    //             INSERT INTO
-    //                 posts (body)
-    //             VALUES
-    //                 (:body)
-    //         ');
+//             // $prepare->bindValue('body', $body);
 
-    //         $prepare->bindValue('body', $body);
-
-    //         $prepare->execute();
-    //         header("Location:social");
-    //     }
-    // }
-    // else
-    // {
-    //     $_POST['text'] = '';     
-    // }
-
+//             // $prepare->execute();
+//             // header("Location:social");
+//         }
+//     }
+//     else
+//     {
+//         $_POST['text'] = '';        
+//     }
 ?>
 
 <div class="items_socialpage">
@@ -55,7 +56,7 @@
     <div class="add_post">
         <form class="form_add" action="#" method="post">
             <input type="text" placeholder="Write your message here..." class="add_msg" name="text">
-            <input class="add_button" type="submit" value="SEND" name="send"></button>
+            <input type="submit" class="add_button" value="SEND" name="send"></button>
         </form>
     </div>
     <?php foreach($posts as $_post): ?>

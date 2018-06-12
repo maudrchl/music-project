@@ -1,5 +1,6 @@
 <?php
      include 'views/partials/navigation.php';
+     $_SESSION["key"] = $_POST["key"];
 ?>
 
 <div class="setting">
@@ -34,7 +35,7 @@
         <!-- email -->
         <form class="form_settings form_settingsI" action="#" method="post">
             <input class="add_msg" type="text" placeholder="Description..." name="description">
-            <button class="add_button" type="submit">Edit</button>
+            <input class="add_button" type="submit" name="submit_description">Edit</button>
         </form>
 
 
@@ -71,6 +72,21 @@
             <label class="settings_label" for="#">No thanks</label>
             <input class="settings_input" type="radio" placeholder="Profile private" name="pseudo">
         </form>
+    </div>
+    <div class="settings setting3">
+    <div class="settings_connexion">
+            <h2 class="settings_title">Keyboard</h2>
+        </div>
+        <div class="settings_intro">Choose your keyboard. </div>
+        <!-- newletter -->
+        <form class="form_settings2" action="#" method="post">
+            <label class="settings_label" for="#">AZERTY</label>
+            <input class="settings_input" type="radio" name="key" value="azerty">
+            <label class="settings_label" for="#">QUERTY</label>
+            <input class="settings_input" type="radio" name="key" value="qwerty">
+            <input type="submit"></input>
+        </form>
+    </div>
     </div>
 </div>
 </body>

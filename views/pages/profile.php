@@ -4,6 +4,7 @@
     include 'views/partials/navigation.php';
     include 'views/partials/profile-bar.php';
 
+
     $query = $pdo->query('SELECT * FROM followers');
     $followers = $query->fetchAll();
 
