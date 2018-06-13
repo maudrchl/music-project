@@ -107,7 +107,7 @@
 
 .touches_beat {
     display: grid;
-    background-color: rgb(255, 151, 32);
+    background-color: #ff9720;
     border-radius: 6px;
     height: 70px;
     width: 70px;
@@ -371,4 +371,10 @@ audio
     bottom: 0;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.label_color
+{
+    margin-left: 10px;
+    text-transform: uppercase;
 }

@@ -43,14 +43,19 @@
                 <h2 class="settings_title">Keyboard</h2>
             </div>
             <div class="settings_intro">Choose your Pad Colors. </div>
-            <form class="form_settings" action="#" method="post" class="colors_choice">
-                <input type="color" name="colorPad" value="#ff9720" class="color_choice" autocomplete=off>
-            </form>
-            <form class="form_settings" action="#" method="post" class="colors_choice">
-                <input type="color" name="colorPad" value="#44ecff" class="color_choice">
-            </form>
-            <form class="form_settings" action="#" method="post" class="colors_choice">
-                <input type="color" name="colorPad" value="#ff63da" class="color_choice">
+            <form class="form_settings2" action="#" method="post" class="colors_choice">
+                <div class="choice">
+                    <input type="color" name="colorPad" value="#ff9720" class="color_choice settings_input">
+                    <label class="settings_label label_color">#ff9720</label>
+                </div>
+                <div class="choice">
+                    <input type="color" name="colorPad" value="#44ecff" class="color_choice settings_input">
+                    <label class="settings_label label_color">#44ecff</label>
+                </div>
+                <div class="choice">
+                    <input type="color" name="colorPad" value="#ff63da" class="color_choice settings_input">
+                    <label class="settings_label label_color">#ff63da</label>
+                </div>
             </form>
             <input type="submit" class="submit_key" value="Submit"></input>
         </div>

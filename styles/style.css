@@ -428,6 +428,10 @@ audio {
   border-radius: 50px;
   cursor: pointer; }
 
+.label_color {
+  margin-left: 10px;
+  text-transform: uppercase; }
+
 .img_pad {
   height: 100vh;
   grid: auto; }
@@ -627,8 +631,7 @@ h3 {
   border: none;
   background: #E9E9E9;
   cursor: pointer;
-  width: 80px;
-  display: flex; }
+  width: 80px; }
 
 .color_choice:focus {
   outline: 0; }
