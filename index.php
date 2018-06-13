@@ -2,7 +2,6 @@
     session_start();
     include "views/partials/header.php";
     include "config.php";
-    $keychoice = $_SESSION["key"];
 
     if (isset($_GET['q'])) {
         switch($_GET['q']) {
