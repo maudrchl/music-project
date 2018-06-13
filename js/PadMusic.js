@@ -3,8 +3,6 @@ class PadMusic{
         this.initialize()
         this.createAudio()
         this.keySound()
-        // this.playSound()
-        this.colorButton()
         this.changeBckgColor()
     }
 
@@ -36,19 +34,30 @@ class PadMusic{
     keySound(){     
         for (this.$button of this.$buttons) {
             this.$button.addEventListener('mousedown', (event) => {
+                let soundtargeted = event.target.dataset.sound
+                let touchtargeted = event.target
+                this.$button.dataset.sound = soundtargeted
+                this.$button = touchtargeted
                 event.preventDefault()
                 if (this.$button) {
                     this.playSound(this.$button.dataset.sound)
+                    this.$button.classList.add('active')
                 }
             })
+
+            this.$button.addEventListener('mouseup', (event) => {
+                    let touchtargeted = event.target
+                    this.$button = touchtargeted
+                    this.$button.classList.remove('active')
+                })
         }
-    
+
         document.addEventListener('keydown', () => {
     
             this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
             if (this.$button) {
                 this.playSound(this.$button.dataset.sound)
-               this.$button.classList.add('active')
+                this.$button.classList.add('active')
             }
         })
         
@@ -68,32 +77,27 @@ class PadMusic{
         audio.play()
     }
 
-    colorButton(){
-        for (this.$genre of this.$genres) {
-            this.$genre1.addEventListener('click', () => {
-            this.$genre1.classList.toggle('changeGenreColor')
-            this.$genre2.classList.remove('changeGenreColor')
-            this.$genre3.classList.remove('changeGenreColor')
-            })
+    // colorButton(){
+    //     for (this.$genre of this.$genres) {
+    //         this.$genre1.addEventListener('click', () => {
+    //         this.$genre1.classList.toggle('changeGenreColor')
+    //         this.$genre2.classList.remove('changeGenreColor')
+    //         this.$genre3.classList.remove('changeGenreColor')
+    //         })
         
-            this.$genre2.addEventListener('click', () => {
-            this.$genre1.classList.remove('changeGenreColor')
-            this.$genre2.classList.toggle('changeGenreColor')
-            this.$genre3.classList.remove('changeGenreColor')
-            })
+    //         this.$genre2.addEventListener('click', () => {
+    //         this.$genre1.classList.remove('changeGenreColor')
+    //         this.$genre2.classList.toggle('changeGenreColor')
+    //         this.$genre3.classList.remove('changeGenreColor')
+    //         })
         
-            this.$genre3.addEventListener('click', () => {
-            this.$genre1.classList.remove('changeGenreColor')
-            this.$genre2.classList.remove('changeGenreColor')
-            this.$genre3.classList.toggle('changeGenreColor')
-            })
-        
-            this.$genre1.addEventListener('mouseover', () => {
-            this.$genre1.classList.remove('genre:hover')
-            this.$genre1.classList.toggle('genre1:hover')
-            })
-        }
-    }
+    //         this.$genre3.addEventListener('click', () => {
+    //         this.$genre1.classList.remove('changeGenreColor')
+    //         this.$genre2.classList.remove('changeGenreColor')
+    //         this.$genre3.classList.toggle('changeGenreColor')
+    //         })
+    //     }
+    // }
 
     changeBckgColor(){
         this.$button_bckg = document.querySelector('.button_bckg')

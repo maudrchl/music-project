@@ -20,6 +20,8 @@
     font-family: NexaB, sans-serif;
     text-align: center;
     transition: filter 0.4s ease-out;
+    cursor: pointer;
+    line-height: 70px;
 }
 
 .top_title {
@@ -205,16 +207,19 @@
 .pop_select {
     grid-row: 1;
     background-color: #4B4B4B;
+    cursor: pointer;
 }
 
 .rock_select {
     grid-row: 2;
     background-color:#4B4B4B;
+    cursor: pointer;
 }
 
 .house_select {
     grid-row: 3;
     background-color: #4B4B4B;
+    cursor: pointer;
 }
 
 .changeGenreColor {
