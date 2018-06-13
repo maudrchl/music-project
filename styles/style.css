@@ -538,7 +538,6 @@ input::placeholder {
   height: 100%;
   background: #E9E9E9;
   margin-left: 15%;
-  cursor: pointer;
   margin-bottom: 5%;
   border-radius: 10px; }
 
@@ -612,6 +611,30 @@ h3 {
 
 .submit_key:focus {
   outline: 0; }
+
+.submit_key:hover {
+  background: #f0b43e; }
+
+.error {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  font-size: 16px;
+  color: red;
+  font-family: NexaH, sans-serif; }
+
+.color_choice {
+  border: none;
+  background: #E9E9E9;
+  cursor: pointer;
+  width: 80px;
+  display: flex; }
+
+.color_choice:focus {
+  outline: 0; }
+
+.colors_choice {
+  display: inline; }
 
 .profile_bar {
   height: 100vh;

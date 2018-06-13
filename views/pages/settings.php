@@ -1,10 +1,7 @@
 <?php
     include 'views/partials/navigation.php';
+    include 'views/partials/form.php';
     $_SESSION["key"] = $_POST["key"];
-
-    $user_id = $_SESSION["id"];
-    $query = $pdo->query("SELECT * FROM users WHERE id = '$user_id'");
-    $user = $query->fetch();
 ?>
 
 <div class="setting">
@@ -18,30 +15,63 @@
         <div class="settings_intro">Edit your informations : </div>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
-            <input class="add_msg" type="text" placeholder="<?= $user->email?>" name="email">
-            <button class="add_button" type="submit">Edit</button>
+            <input class="add_msg" type="text" placeholder="<?=  $user->email ?>" name="email">
+            <button class="add_button" type="submit" name="submit_email">Edit</button>
         </form>
         <!-- mdp -->
         <form class="form_settings" action="#" method="post">
-            <input class="add_msg" type="text" placeholder="<?php echo $user_id;?>" name="mot de passe">
-            <button class="add_button" type="submit">Edit</button>
+            <input class="add_msg" type="password" placeholder="•••••••••" name="password">
+            <button class="add_button" type="submit" name="submit_password">Edit</button>
         </form>
         <!-- email -->
         <form class="form_settings" action="#" method="post">
-            <input class="add_msg" type="text" placeholder="Pseudo" name="pseudo">
-            <button class="add_button" type="submit">Edit</button>
+            <input class="add_msg" type="text" placeholder="<?= $user->name ?>" name="name">
+            <button class="add_button" type="submit_name">Edit</button>
         </form>
         <!-- email -->
         <form class="form_settings form_settingsI" action="#" method="post">
-            <input class="add_msg" type="text" placeholder="Description..." name="description">
+            <input class="add_msg" type="text" placeholder="<?= $user->description ?>" name="description">
             <input class="add_button" type="submit" name="submit_description" value="Edit">Edit</button>
         </form>
-
-
-
-
     </div>
     <div class="settings setting2">
+    <div class="settings_connexion">
+            <h2 class="settings_title">Keyboard</h2>
+        </div>
+        <div class="settings_intro">Choose your Pad Colors. </div>
+        <form class="form_settings" action="#" method="post" class="colors_choice">
+            <input type="color" name="colorPad" value="#ff9720" class="color_choice" autocomplete=off>
+        </form>
+        <form class="form_settings" action="#" method="post" class="colors_choice">
+            <input type="color" name="colorPad" value="#44ecff" class="color_choice">
+        </form>
+        <form class="form_settings" action="#" method="post" class="colors_choice">
+            <input type="color" name="colorPad" value="#ff63da" class="color_choice">
+        </form>
+        <input type="submit" class="submit_key" value="Submit"></input>
+        </div>
+        </div>
+        <div class="settings setting2">
+        <div class="settings_connexion">
+            <h2 class="settings_title">Keyboard</h2>
+        </div>
+        <div class="settings_intro">Choose your keyboard. </div>
+        <!-- description -->
+        <form class="form_settings2" action="#" method="post">
+        <div class="choice">
+            <input class="settings_input" type="radio" name="key" value="azerty" id="azerty">
+            <label class="settings_label" for="azerty">AZERTY</label>
+        </div>
+        <div class="choice">
+            <input class="settings_input" type="radio" name="key" value="qwerty" id="qwerty">
+            <label class="settings_label" for="qwerty" id="qwerty">QUERTY</label>
+        </div>
+            <input type="submit" class="submit_key" value="Submit"></input>
+        </form>
+        </div>
+        </div>
+    </div>
+    <div class="settings setting3">
     <div class="settings_connexion">
         <h2 class="settings_title">Security</h2>
     </div>
@@ -53,31 +83,6 @@
             <input class="settings_input" type="radio" placeholder="Profile public" name="pseudo">
             <label class="settings_label" for="radio">Profile Public</label>
         </form>
-        <div class="settings_intro">Pad Colors</div>
-        <!-- description -->
-        <form class="form_settings" action="#" method="post">
-            <input type="color" name="colorPad">
-        </form>
-    </div>
-    <div class="settings setting3">
-    <div class="settings_connexion">
-            <h2 class="settings_title">Keyboard</h2>
-        </div>
-        <div class="settings_intro">Choose your keyboard. </div>
-        <!-- newletter -->
-        <form class="form_settings2" action="#" method="post">
-        <div class="choice">
-            <input class="settings_input" type="radio" name="key" value="azerty" id="azerty">
-            <label class="settings_label" for="azerty">AZERTY</label>
-        </div>
-        <div class="choice">
-            <input class="settings_input" type="radio" name="key" value="qwerty" id="qwerty">
-            <label class="settings_label" for="qwerty" id="qwerty">QUERTY</label>
-        </div>
-            <input type="submit" class="submit_key"></input>
-        </form>
-    </div>
-    </div>
     <div class="settings setting3">
     <div class="settings_connexion">
             <h2 class="settings_title">Newsletter</h2>

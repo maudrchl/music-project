@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "views/partials/header.php";
+    include "views/partials/footer.php";
     include "config.php";
 
     if (isset($_GET['q'])) {
