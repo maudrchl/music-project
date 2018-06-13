@@ -551,19 +551,18 @@ h3 {
   display: none; }
 
 .settings_title {
-  margin-left: 5%;
+  margin-left: 45px;
   padding-top: 3%; }
 
 .form_settings {
-  text-align: center;
-  padding: 3%; }
+  margin-left: 40px;
+  padding: 0.5%; }
 
 .form_settingsI {
   padding-bottom: 5%; }
 
 .form_settingsII {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 5%; }
 
@@ -588,9 +587,54 @@ h3 {
 
 .settings_label {
   font-size: 15px;
-  margin-top: 0;
-  display: flex;
-  left: 100px; }
+  padding-bottom: 1px;
+  display: inline-block; }
+
+.settings_input {
+  display: inline-block;
+  width: 30px; }
+
+.choice {
+  margin-left: 62px; }
+
+.submit_key {
+  padding: 15px 10px 30px 10px;
+  background: #FFC24B;
+  font-family: NexaB, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 62px;
+  cursor: pointer; }
+
+.submit_key:focus {
+  outline: 0; }
+
+.submit_key:hover {
+  background: #f0b43e; }
+
+.error {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  font-size: 16px;
+  color: red;
+  font-family: NexaH, sans-serif; }
+
+.color_choice {
+  border: none;
+  background: #E9E9E9;
+  cursor: pointer;
+  width: 80px;
+  display: flex; }
+
+.color_choice:focus {
+  outline: 0; }
+
+.colors_choice {
+  display: inline; }
 
 .profile_bar {
   height: 100vh;

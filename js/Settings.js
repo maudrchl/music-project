@@ -1,24 +1,13 @@
-// class Settings{
-//     constructor(){
-//         this.initialize()
-//         this.event()
-//     }
+const colorPicker = document.querySelector('.color_choice')
+newColor = colorPicker.value
 
-//     initialize(){
-//         this.$settings = Array.from(document.querySelectorAll('.settings'))
-//         this.$subsettings = Array.from(document.querySelectorAll('.subsettings'))
-//     }
+colorPicker.addEventListener('change', () => {
+    newValue = colorPicker.value
+    changeValue()
+})
 
-//     event(){   
-//         for (let i = 0; i < this.$settings.length; i++){
-//             this.$settings[i].addEventListener('mousedown', (e) =>{
-//             e.preventDefault()
-//         if (this.$settings[i].classList.contains('active')){
-//             this.$settings[i].classList.remove('active')
-//             this.$settings[i].classList.toggle('active')
-//             }
-//             this.$settings[i].classList.toggle('active')
-//             })
-//         }   
-//     }
-// }
+changeValue = () => 
+{
+    colorPicker.value = newValue
+    return true
+}

@@ -1,5 +1,7 @@
 <?php
+    session_start();
     include "views/partials/header.php";
+    include "views/partials/footer.php";
     include "config.php";
 
     if (isset($_GET['q'])) {
@@ -11,7 +13,11 @@
                 include "views/pages/social.php";
                 break;
             case 'pad':
-                include "views/pages/pad.php";
+                if($_SESSION["key"]  === "azerty"){
+                    include "views/pages/pad.php";
+                } else {
+                    include "views/pages/pad_qwerty.php";
+                }
                 break;
             case 'profile':
                 include "views/pages/profile.php";
