@@ -140,6 +140,7 @@
     <script src="js/PadMusic.js"></script>
     <script src="js/Record.js"></script>
     <script src="js/RecordMicrophone.js"></script>
+    <script src="js/Settings.js"></script>
     <script src="js/main.js"></script>
 
     </html>

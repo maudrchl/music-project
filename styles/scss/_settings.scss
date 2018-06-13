@@ -123,3 +123,42 @@ h3
     display: inline;
 }
 
+.color_choice2
+{
+    border:none;
+    background: $grey;
+    cursor:pointer;
+    width: 80px;
+}
+.color_choice2:focus {outline:0;}
+
+.colors_choice2
+{
+    display: inline;
+}
+
+.color_choice3
+{
+    border:none;
+    background: $grey;
+    cursor:pointer;
+    width: 80px;
+}
+.color_choice3:focus {outline:0;}
+
+.colors_choice3
+{
+    display: inline;
+}
+
+.label_color2
+{
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.label_color3
+{
+    text-transform: uppercase;
+    margin-left: 10px;
+}

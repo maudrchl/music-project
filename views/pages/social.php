@@ -1,5 +1,4 @@
 <?php
-    session_start();
     $message = '';
 
     include 'views/partials/header.php';
@@ -22,32 +21,6 @@
         $username = $query->fetch();
         return $username->name;
     }
-
-// if(isset($_POST['send']))
-//     {
-//         if(empty($_POST['text'])){
-//             echo $message = "No text";
-//         } else {
-//             echo '<pre>';
-//             print_r($_POST['text']);
-//             echo '</pre>';
-//             // $prepare = $pdo->prepare('
-//             //     INSERT INTO
-//             //         posts (id, user_id, body, stamp)
-//             //     VALUES
-//             //         (:id, :user_id, :body; :stamp)
-//             // ');
-
-//             // $prepare->bindValue('body', $body);
-
-//             // $prepare->execute();
-//             // header("Location:social");
-//         }
-//     }
-//     else
-//     {
-//         $_POST['text'] = '';        
-//     }
 ?>
 
 <div class="items_socialpage">
@@ -55,8 +28,8 @@
     <a href="logout"><img class="off" src="assets/img/power.svg" width=20></a>
     <div class="add_post">
         <form class="form_add" action="#" method="post">
-            <input type="text" placeholder="Write your message here..." class="add_msg" name="text">
-            <input type="submit" class="add_button" value="SEND" name="send"></button>
+            <input type="text" placeholder="Write your message here..." class="add_msg" name="newtext">
+            <input type="submit" class="add_button" value="SEND" name="newpost"></button>
         </form>
     </div>
     <?php foreach($posts as $_post): ?>

@@ -49,15 +49,15 @@
                     <label class="settings_label label_color">#ff9720</label>
                 </div>
                 <div class="choice">
-                    <input type="color" name="colorPad" value="#44ecff" class="color_choice settings_input">
-                    <label class="settings_label label_color">#44ecff</label>
+                    <input type="color" name="colorPad" value="#44ecff" class="color_choice2 settings_input">
+                    <label class="settings_label label_color2">#44ecff</label>
                 </div>
                 <div class="choice">
-                    <input type="color" name="colorPad" value="#ff63da" class="color_choice settings_input">
-                    <label class="settings_label label_color">#ff63da</label>
+                    <input type="color" name="colorPad" value="#ff63da" class="color_choice3 settings_input">
+                    <label class="settings_label label_color3">#ff63da</label>
                 </div>
             </form>
-            <input type="submit" class="submit_key" value="Submit"></input>
+            <input type="submit" class="submit_key submit_color" value="Submit"></input>
         </div>
     </div>
     <div class="settings setting2">

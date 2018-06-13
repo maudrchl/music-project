@@ -1,13 +1,44 @@
 const colorPicker = document.querySelector('.color_choice')
 const colorLabel = document.querySelector('.label_color')
+const colorPicker2 = document.querySelector('.color_choice2')
+const colorLabel2 = document.querySelector('.label_color2')
+const colorPicker3 = document.querySelector('.color_choice3')
+const colorLabel3 = document.querySelector('.label_color3')
+
 newColor = colorPicker.value
+newColor2 = colorPicker2.value
+newColor3 = colorPicker3.value
 
 colorPicker.addEventListener('change', () => {
     newValue = colorPicker.value
     colorLabel.innerHTML = newValue
 })
 
+colorPicker2.addEventListener('change', () => {
+  newValue2 = colorPicker2.value
+  colorLabel2.innerHTML = newValue2
+})
 
+colorPicker3.addEventListener('change', () => {
+  newValue3 = colorPicker3.value
+  colorLabel3.innerHTML = newValue3
+})
+
+const $submit = document.querySelector('.submit_color')
+
+$submit.addEventListener('click',() =>
+{
+  let colorPad = colorPicker.value;
+  localStorage.setItem("colorPad", colorPad);
+  colorPad = localStorage.getItem("colorPad")
+  colorPicker.value = colorPad
+
+  let colorPad2 = colorPicker2.value;
+  localStorage.setItem("colorPad2", colorPad2);
+
+  let colorPad3 = colorPicker3.value;
+  localStorage.setItem("colorPad3", colorPad3);
+})
 
 // checkbox acting like radio
 

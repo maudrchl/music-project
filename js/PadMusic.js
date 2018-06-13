@@ -1,6 +1,7 @@
 class PadMusic{
     constructor(){
         this.initialize()
+        this.changeColorPad()
         this.createAudio()
         this.keySound()
         this.changeBckgColor()
@@ -13,6 +14,26 @@ class PadMusic{
         this.$genre1 = document.querySelector('.pop_select')
         this.$genre2 = document.querySelector('.rock_select')
         this.$genre3 = document.querySelector('.house_select')
+    }
+
+    changeColorPad(){
+        this.$left = Array.from(document.querySelectorAll('.touches_bass'))
+        for (let i=0; i<this.$left.length;i++){
+            this.colorPad2 = localStorage.getItem("colorPad2")
+            this.$left[i].style.background = this.colorPad2
+        }
+
+        this.$middle = Array.from(document.querySelectorAll('.touches_beat'))
+        for (let i=0; i<this.$middle.length;i++){
+            this.colorPad = localStorage.getItem("colorPad")
+            this.$middle[i].style.background = this.colorPad
+        }
+
+        this.$right = Array.from(document.querySelectorAll('.touches_melodies'))
+        for (let i=0; i<this.$right.length;i++){
+            this.colorPad3 = localStorage.getItem("colorPad3")
+            this.$right[i].style.background = this.colorPad3
+        }
     }
 
     createAudio(){   

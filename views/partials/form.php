@@ -54,4 +54,19 @@
             <?php
         }
     }
-?>
+
+    if(isset($_POST['newpost']))
+    {
+        if(!empty($_POST['newtext'])){
+            echo $user_id = $user->id;
+            echo $body = $_POST['newtext'];
+            echo $stamp = date('F j, Y, g:i a', time());
+            $prepare = $pdo->prepare("INSERT INTO posts (user_id, body, stamp) VALUES (?, ?, ?')");
+            $prepare->execute(array($user_id, $body, $stamp));
+            header("location: social");
+        } else {
+            ?>
+            <span class="error">Missing text</span>
+            <?php
+        }
+    }
