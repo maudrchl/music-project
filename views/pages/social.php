@@ -15,7 +15,7 @@
     $followers = $query->fetchAll();
 
     $user_id = $_SESSION["id"];
-    $query = $pdo->query("SELECT * FROM posts");
+    $query = $pdo->query("SELECT * FROM posts ORDER BY stamp DESC");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
