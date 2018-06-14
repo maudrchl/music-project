@@ -30,8 +30,6 @@ $submit.addEventListener('click',() =>
 {
   let colorPad = colorPicker.value;
   localStorage.setItem("colorPad", colorPad);
-  colorPad = localStorage.getItem("colorPad")
-  colorPicker.value = colorPad
 
   let colorPad2 = colorPicker2.value;
   localStorage.setItem("colorPad2", colorPad2);
@@ -39,6 +37,15 @@ $submit.addEventListener('click',() =>
   let colorPad3 = colorPicker3.value;
   localStorage.setItem("colorPad3", colorPad3);
 })
+
+colorPad = localStorage.getItem("colorPad")
+colorPicker.value = colorPad
+
+colorPad2 = localStorage.getItem("colorPad2")
+colorPicker2.value = colorPad2
+
+colorPad3 = localStorage.getItem("colorPad3")
+colorPicker3.value = colorPad3
 
 // checkbox acting like radio
 

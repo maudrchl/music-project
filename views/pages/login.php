@@ -55,6 +55,8 @@
     } 
 ?>
 <body>
+    <!-- <div class="loader">
+    </div> -->
     <div class="container">
         <img class="img_pad" src="assets/img/pad.png">
         

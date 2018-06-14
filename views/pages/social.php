@@ -1,4 +1,6 @@
 <?php
+    date_default_timezone_set('Europe/Paris');
+    echo $stamp = date('F j, Y, g:i a', time());
     $message = '';
 
     include 'views/partials/header.php';
@@ -21,7 +23,25 @@
         $username = $query->fetch();
         return $username->name;
     }
+
+    if(isset($_POST['newpost']))
+    {
+        if(!empty($_POST['newtext'])){
+            $body = $_POST['newtext'];
+            $user_id = $user->id;
+            $stamp = date('Y-m-d H:i:s');
+            $prepare = $pdo->prepare("INSERT INTO posts (user_id, body, stamp) VALUES (?, ?, ?)");
+            $prepare->execute(array($user_id, $body, $stamp));
+            header("location: social");
+        } else {
+            ?>
+            <span class="error">Missing text</span>
+            <?php
+        }
+    }
+
 ?>
+
 
 <div class="items_socialpage">
     <h1 class="social_title">Your timeline</h1>

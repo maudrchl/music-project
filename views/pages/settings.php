@@ -74,7 +74,7 @@
                 </div>
                 <div class="choice">
                     <input class="settings_input" type="checkbox" name="key" value="qwerty" id="qwerty">
-                    <label class="settings_label" for="qwerty" id="qwerty">QUERTY</label>
+                    <label class="settings_label" for="qwerty" id="qwerty">QWERTY</label>
                 </div>
             </div>
             <input type="submit" class="submit_key" value="Submit"></input>

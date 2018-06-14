@@ -501,6 +501,11 @@ input::placeholder {
   font-family: NexaL, sans-serif;
   color: red; }
 
+.loader {
+  width: 100%;
+  height: 100vw;
+  background: black; }
+
 .yellow_border {
   width: 100%;
   height: 50px;
