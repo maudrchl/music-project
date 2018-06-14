@@ -11,3 +11,7 @@ if(typeof PadMusic == "function"){
 if(typeof Settings == "function"){
     const settings = new Settings()
 }
+
+if(typeof Loader == "function"){
+    const loader = new Loader()
+}

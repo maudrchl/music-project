@@ -501,11 +501,109 @@ input::placeholder {
   font-family: NexaL, sans-serif;
   color: red; }
 
-.loader {
+.loader_page {
   width: 100%;
   height: 100vw;
   background: black; }
 
+/*settings*/
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: black; }
+
+.loader {
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  width: 200px;
+  height: 200px;
+  background: #646464;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  animation: root-animation 20s both 0s steps(1, end) infinite alternate; }
+  .loader li {
+    width: 100px;
+    height: 100px;
+    background: inherit;
+    position: absolute;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    visibility: visible; }
+  .loader li:nth-child(1), .loader li:nth-child(3) {
+    left: 0; }
+  .loader li:nth-child(2), .loader li:nth-child(4) {
+    left: 100px; }
+  .loader li:nth-child(1), .loader li:nth-child(2) {
+    top: 0; }
+  .loader li:nth-child(3), .loader li:nth-child(4) {
+    top: 100px; }
+  .loader li:nth-child(1) {
+    animation-name: loader-item-1; }
+  .loader li:nth-child(2) {
+    animation-name: loader-item-2; }
+  .loader li:nth-child(3) {
+    animation-name: loader-item-3; }
+  .loader li:nth-child(4) {
+    animation-name: loader-item-4; }
+
+@keyframes root-animation {
+  from, to {
+    background: #FFC24B; }
+  10%, 90% {
+    background: #44ecff; }
+  20%, 80% {
+    background: #ff9720; }
+  30%, 70% {
+    background: #ff63da; }
+  40%, 60% {
+    background: #fff826; }
+  50% {
+    background: #d20830; } }
+@keyframes loader-item-1 {
+  20%, 80% {
+    top: -25px;
+    left: -25px; }
+  25% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(90deg); } }
+@keyframes loader-item-2 {
+  20%, 80% {
+    top: -25px;
+    left: 125px; }
+  25% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-90deg); }
+  100% {
+    transform: rotate(-90deg); } }
+@keyframes loader-item-3 {
+  20%, 80% {
+    top: 125px;
+    left: -25px; }
+  25% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-90deg); }
+  100% {
+    transform: rotate(-90deg); } }
+@keyframes loader-item-4 {
+  20%, 80% {
+    top: 125px;
+    left: 125px; }
+  25% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(90deg); } }
 .yellow_border {
   width: 100%;
   height: 50px;

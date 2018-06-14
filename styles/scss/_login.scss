@@ -84,9 +84,157 @@ input::placeholder
     color: red;
 }
 
-.loader
+.loader_page
 {
     width: 100%;
     height: 100vw;
     background: black;
+}
+
+/*settings*/
+$loader-item-size: 100px;
+$animation-rotation-corner: 90deg;
+$animation-direction: 1;
+$root-animation-duration: 20s;
+
+
+
+$loader-size: $loader-item-size * 2;
+$loader-item-animation-delay: 2s;
+$animation-item-offset: $loader-item-size / 4;
+
+.loading
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+.loader { 
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  width: $loader-size;
+  height: $loader-size;
+  background: rgba(100, 100, 100, 1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  animation: root-animation $root-animation-duration both 0s steps(1, end) infinite alternate;
+  
+  & li {
+    width: $loader-item-size;
+    height: $loader-item-size;
+    background: inherit;
+    position: absolute;
+    animation-duration: $loader-item-animation-delay;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    visibility: visible;
+  }
+  
+  
+  li:nth-child(1), li:nth-child(3) {
+    left: 0;
+  }
+  li:nth-child(2), li:nth-child(4) {
+    left: $loader-item-size;
+  }
+  li:nth-child(1), li:nth-child(2) {
+    top: 0;
+  }
+  li:nth-child(3), li:nth-child(4) {
+    top: $loader-item-size;
+  }
+  
+  @for $i from 1 through 4 {
+    li:nth-child(#{$i}) {
+      animation-name: loader-item-#{$i};
+    }
+  }
+  
+}
+
+@keyframes root-animation {
+  from, to {
+    background: $yellow;
+  }
+  10%, 90% {
+    background: #44ecff;
+  }
+  20%, 80% {
+    background: #ff9720;
+  }
+  30%, 70% {
+    background: #ff63da;
+  }
+  40%, 60% {
+    background: rgb(255, 248, 38);
+  }
+  50% {
+    background: rgb(210, 8, 48);
+  }
+}
+
+@keyframes loader-item-1 {
+  20%, 80% {
+    top: -$animation-item-offset;
+    left: -$animation-item-offset;
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate($animation-rotation-corner * $animation-direction);
+  }
+  100% {
+    transform: rotate($animation-rotation-corner * $animation-direction);
+  }
+}
+@keyframes loader-item-2 {
+  20%, 80% {
+    top: -$animation-item-offset;
+    left: $loader-item-size + $animation-item-offset;
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1 * ($animation-rotation-corner * $animation-direction));
+  }
+  100% {
+    transform: rotate(-1 * ($animation-rotation-corner * $animation-direction));
+  }
+}
+@keyframes loader-item-3 {
+  20%, 80% {
+    top: $loader-item-size + $animation-item-offset;
+    left: -$animation-item-offset;
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1 * ($animation-rotation-corner * $animation-direction));
+  }
+  100% {
+    transform: rotate(-1 * ($animation-rotation-corner * $animation-direction));
+  }
+}
+@keyframes loader-item-4 {
+  20%, 80% {
+    top: $loader-item-size + $animation-item-offset;
+    left: $loader-item-size + $animation-item-offset;
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate($animation-rotation-corner * $animation-direction);
+  }
+  100% {
+    transform: rotate($animation-rotation-corner * $animation-direction);
+  }
 }

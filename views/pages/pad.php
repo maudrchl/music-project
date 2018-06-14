@@ -15,7 +15,6 @@
             <div class="options">
                 <a href="#">
                     <img class="options_img" src="assets/img/rouage.svg" alt="options">
-                    <img class="options_img" src="assets/img/rouage.svg" alt="options">
                 </a>
             </div>
             <div class="left_buttons">

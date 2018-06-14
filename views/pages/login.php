@@ -55,8 +55,15 @@
     } 
 ?>
 <body>
-    <!-- <div class="loader">
-    </div> -->
+    <div class="loading">
+        <ul class="loader">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
     <div class="container">
         <img class="img_pad" src="assets/img/pad.png">
         
@@ -83,7 +90,7 @@
             <p class="message"><?= $message ?></p>
         </div>
     </div>
-
-
-</body>
+    </body>
+<script src="js/Loader.js"></script>
+<script src="js/main.js"></script>
 </html>
