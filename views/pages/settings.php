@@ -1,7 +1,13 @@
 <?php
-    include 'views/partials/navigation.php';
-    include 'views/partials/form.php';
-    $_SESSION["key"] = $_POST["key"];
+    session_start();
+    if(isset($_SESSION['id'])) {
+        echo $_SESSION['id'];
+    }
+
+    $id = $_SESSION['id'];
+        include 'views/partials/navigation.php';
+        include 'views/partials/form.php';
+        $_SESSION["key"] = $_POST["key"];
 ?>
 
     <div class="setting">

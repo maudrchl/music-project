@@ -1,6 +1,9 @@
 <?php
+    echo $_SESSION['id'];
+    $id = $_SESSION['id'];
+    
     date_default_timezone_set('Europe/Paris');
-    echo $stamp = date('F j, Y, g:i a', time());
+    $stamp = date('F j, Y, g:i a', time());
     $message = '';
 
     include 'views/partials/header.php';
@@ -8,30 +11,26 @@
     include 'views/partials/form.php';
 
 
-    $query = $pdo->query('SELECT * FROM users');
+    $query = $pdo->query("SELECT * FROM posts WHERE id = $id");
     $users = $query->fetchAll();
 
-    $query = $pdo->query('SELECT * FROM followers');
-    $followers = $query->fetchAll();
-
-    $user_id = $_SESSION["id"];
     $query = $pdo->query("SELECT * FROM posts ORDER BY stamp DESC");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
         $query = $pdo->query("SELECT * FROM users WHERE id = $id");
-        $username = $query->fetch();
-        return $username->name;
+        $user = $query->fetch();
+        return $user->name;
     }
 
     if(isset($_POST['newpost']))
     {
         if(!empty($_POST['newtext'])){
             $body = $_POST['newtext'];
-            $user_id = $user->id;
+            $id = $_SESSION['id'];
             $stamp = date('Y-m-d H:i:s');
-            $prepare = $pdo->prepare("INSERT INTO posts (user_id, body, stamp) VALUES (?, ?, ?)");
-            $prepare->execute(array($user_id, $body, $stamp));
+            $prepare = $pdo->prepare("INSERT INTO posts (id, body, stamp) VALUES (?, ?, ?)");
+            $prepare->execute(array($id, $body, $stamp));
             header("location: social");
         } else {
             ?>
@@ -63,7 +62,7 @@
                 <h4 class="post date_social">
                 <?php
                     $originalDate = $_post->stamp;
-                    echo $newDate = date("F j, Y, g:i a", strtotime($originalDate));
+                    $newDate = date("F j, Y, g:i a", strtotime($originalDate));
                 ?>
                 </h4>
             </div>

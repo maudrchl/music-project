@@ -1,5 +1,4 @@
 <?php
-    session_start();
     $message = '';
 
     if(!empty($_POST))
@@ -42,8 +41,8 @@
                 $query = $pdo->query("SELECT * FROM users WHERE email = '$email'");
                 $user_id = $query->fetch();
 
-                $_SESSION["user"] = $email;
                 $_SESSION["id"] = $user_id->id;
+                echo $_SESSION["id"];
 
                 header("Location: social");
             }

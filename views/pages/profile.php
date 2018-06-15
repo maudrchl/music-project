@@ -1,15 +1,20 @@
 <?php
     session_start();
+    if(isset($_SESSION['id'])) {
+        echo $_SESSION['id'];
+    }
+
+    $id = $_SESSION['id'];
+
     include 'views/partials/header.php';
     include 'views/partials/navigation.php';
     include 'views/partials/profile-bar.php';
 
-
     $query = $pdo->query('SELECT * FROM followers');
     $followers = $query->fetchAll();
 
-    $user_id = $_SESSION["id"];
-    $query = $pdo->query("SELECT * FROM posts WHERE user_id = '$user_id'");
+    echo $user_id = $_SESSION["id"];
+    $query = $pdo->query("SELECT * FROM posts WHERE user_id = '$id'");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
@@ -26,7 +31,7 @@
 
     <?php foreach($posts as $_post): ?>
         <div class="items_profile">
-            <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $_post->user_id?>" width="100" height="100" alt="">
+            <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $id?>" width="100" height="100" alt="">
             <div class="social_content">
                 <h2 class="post username_social"><?= get_username($pdo, $_post->user_id) ?></h2>
                 <h2 class="post"><?= $_post->body ?></h2>

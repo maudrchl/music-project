@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $query = $pdo->query("SELECT * FROM users");
     $user = $query->fetch();
     $_SESSION["id"] = $user->id;
