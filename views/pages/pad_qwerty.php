@@ -2,12 +2,9 @@
     include 'views/partials/navigation.php';
 ?>
     <div class="container">
-        <div class="items">
-            <?php
-            include 'navigation.php';
-        ?>
+        <div class="pad_background items">
+            <canvas class="canvas"></canvas>
         </div>
-        <div class="pad_background items"></div>
         <div class="pad items">
             <span class="top_title_beats top_title">BEATS</span>
             <span class="top_title_bass top_title">BASS</span>
@@ -137,6 +134,7 @@
     <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"> </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/PadCanvas.js"></script>
     <script src="js/PadMusic.js"></script>
     <script src="js/Record.js"></script>
     <script src="js/RecordMicrophone.js"></script>
