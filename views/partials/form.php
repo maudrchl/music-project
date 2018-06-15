@@ -55,16 +55,16 @@
             <?php
         }
     }
-
+    
     if(isset($_POST['newpost']))
     {
         if(!empty($_POST['newtext'])){
             $user_id = $user->id;
             $user_name = $user->name;
             $body = $_POST['newtext'];
-            $stamp = "date('F j, Y, g:i a', time())";
-            $prepare = $pdo->prepare("INSERT INTO posts (user_id, user_name, body, stamp) VALUES (?, ?, ?, ?)");
-            $prepare->execute(array($user_id, $user_name, $body, $stamp));
+            $stamp = date('F j, Y, g:i a');
+            $prepare = $pdo->prepare("INSERT INTO posts (user_id, user_name, body, stamp) VALUES (?, ?, ?, NOW())");
+            $prepare->execute(array($user_id, $user_name, $body));
             header("location: social");
         } else {
             ?>

@@ -2,7 +2,6 @@
     $id = $_SESSION['id'];
     
     date_default_timezone_set('Europe/Paris');
-    $stamp = date('F j, Y, g:i a', time());
     $message = '';
 
     include 'views/partials/header.php';
@@ -37,9 +36,9 @@
                     <p class="post"><?= $_post->body ?></p> 
                 </div>
                 <h4 class="post date_social">
-                <?=
+                <?php
                     $originalDate = $_post->stamp;
-                    $newDate = date("F j, Y, g:i a", strtotime($originalDate));
+                    echo $newDate = date("F j, Y, g:i a", strtotime($originalDate));
                 ?>
                 </h4>
             </div>
