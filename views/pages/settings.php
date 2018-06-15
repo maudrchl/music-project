@@ -73,7 +73,7 @@
         <div class="settings_intro">Choose your keyboard. </div>
         <!-- description -->
         <form class="form_settings2" action="#" method="post">
-            <div class = "checkbox-container">
+            <div class="checkbox-container">
                 <div class="choice">
                     <input class="settings_input" type="checkbox" name="key" value="azerty" id="azerty" checked>
                     <label class="settings_label" for="azerty">AZERTY</label>
@@ -93,10 +93,10 @@
         <div class="settings_intro">Public or Private account :</div>
         <!-- pseudo -->
         <form class="form_settings2" action="#" method="post">
-            <div class = "checkbox-container">
+            <div class="checkbox-container">
                 <div class="choice">
-                <input class="settings_input" type="checkbox" placeholder="Profile private" name="pseudo" id="private">
-                <label class="settings_label" for="private">PRIVATE PROFILE</label>
+                    <input class="settings_input" type="checkbox" placeholder="Profile private" name="pseudo" id="private">
+                    <label class="settings_label" for="private">PRIVATE PROFILE</label>
                 </div>
                 <div class="choice">
                     <input class="settings_input" type="checkbox" placeholder="Profile public" name="pseudo" id="public" checked>
@@ -105,22 +105,22 @@
             </div>
         </form>
         <h2 class="settings_title">Newsletter</h2>
-            <div class="settings_intro">Do you want to receive our weekly newsletter ? </div>
-            <!-- newletter -->
-            <form class="form_settings2" action="#" method="post">
-                <div class = "checkbox-container">
-                    <div class="choice">
-                        <input class="settings_input" type="checkbox" name="newsletter" id="yes">
-                        <label class="settings_label" for="yes">YES</label>
-                    </div>
-                    <div class="choice">
-                        <input class="settings_input" type="checkbox" name="newsletter" id="no">
-                        <label class="settings_label" for="no">NO</label>
-                    </div>
+        <div class="settings_intro">Do you want to receive our weekly newsletter ? </div>
+        <!-- newletter -->
+        <form class="form_settings2" action="#" method="post">
+            <div class="checkbox-container">
+                <div class="choice">
+                    <input class="settings_input" type="checkbox" name="newsletter" id="yes">
+                    <label class="settings_label" for="yes">YES</label>
                 </div>
-                <input type="submit" class="submit_key" value="Submit"></input>
-            </form>
-        </div>
+                <div class="choice">
+                    <input class="settings_input" type="checkbox" name="newsletter" id="no">
+                    <label class="settings_label" for="no">NO</label>
+                </div>
+            </div>
+            <input type="submit" class="submit_key" value="Submit"></input>
+        </form>
+    </div>
     </div>
     </body>
     <script src="js/Settings.js"></script>
