@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     $query = $pdo->query("SELECT * FROM users WHERE id = '$id'");
     $user = $query->fetch();
@@ -60,11 +59,12 @@
     if(isset($_POST['newpost']))
     {
         if(!empty($_POST['newtext'])){
-            echo $user_id = $user->id;
-            echo $body = $_POST['newtext'];
-            echo $stamp = date('F j, Y, g:i a', time());
-            $prepare = $pdo->prepare("INSERT INTO posts (user_id, body, stamp) VALUES (?, ?, ?')");
-            $prepare->execute(array($user_id, $body, $stamp));
+            $user_id = $user->id;
+            $user_name = $user->name;
+            $body = $_POST['newtext'];
+            $stamp = "date('F j, Y, g:i a', time())";
+            $prepare = $pdo->prepare("INSERT INTO posts (user_id, user_name, body, stamp) VALUES (?, ?, ?, ?)");
+            $prepare->execute(array($user_id, $user_name, $body, $stamp));
             header("location: social");
         } else {
             ?>
@@ -72,3 +72,5 @@
             <?php
         }
     }
+?>
+    

@@ -13,8 +13,7 @@
     $query = $pdo->query('SELECT * FROM followers');
     $followers = $query->fetchAll();
 
-    echo $user_id = $_SESSION["id"];
-    $query = $pdo->query("SELECT * FROM posts WHERE user_id = '$id'");
+    $query = $pdo->query("SELECT * FROM posts WHERE user_id = ".$id."");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
