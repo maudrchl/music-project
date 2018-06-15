@@ -23,22 +23,6 @@
         return $user->name;
     }
 
-    if(isset($_POST['newpost']))
-    {
-        if(!empty($_POST['newtext'])){
-            $body = $_POST['newtext'];
-            $id = $_SESSION['id'];
-            $stamp = date('Y-m-d H:i:s');
-            $prepare = $pdo->prepare("INSERT INTO posts (id, body, stamp) VALUES (?, ?, ?)");
-            $prepare->execute(array($id, $body, $stamp));
-            header("location: social");
-        } else {
-            ?>
-            <span class="error">Missing text</span>
-            <?php
-        }
-    }
-
 ?>
 
 

@@ -42,6 +42,7 @@
                 $user_id = $query->fetch();
 
                 $_SESSION["id"] = $user_id->id;
+                $id = $_SESSION["id"];
                 echo $_SESSION["id"];
 
                 header("Location: social");
@@ -54,14 +55,14 @@
     } 
 ?>
 <body>
-    <div class="loading">
+    <!-- <div class="loading">
         <ul class="loader">
             <li></li>
             <li></li>
             <li></li>
             <li></li>
         </ul>
-    </div>
+    </div> -->
 </div>
     <div class="container">
         <img class="img_pad" src="assets/img/pad.png">

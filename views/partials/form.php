@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-    $query = $pdo->query("SELECT * FROM users");
+    $query = $pdo->query("SELECT * FROM users WHERE id = '$id'");
     $user = $query->fetch();
-    $_SESSION["id"] = $user->id;
+    $id = $_SESSION["id"];
 
     if(isset($_POST['submit_email']))
     {

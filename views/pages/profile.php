@@ -31,9 +31,9 @@
 
     <?php foreach($posts as $_post): ?>
         <div class="items_profile">
-            <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $id?>" width="100" height="100" alt="">
+            <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $id ?>" width="100" height="100" alt="">
             <div class="social_content">
-                <h2 class="post username_social"><?= get_username($pdo, $_post->user_id) ?></h2>
+                <h2 class="post username_social"><?= get_username($pdo, $id) ?></h2>
                 <h2 class="post"><?= $_post->body ?></h2>
                 <h2 class="post date_profile">
                 <?php
