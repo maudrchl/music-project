@@ -1,4 +1,4 @@
-(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Recorder = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{let g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Recorder = f()}})(function(){let define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){let a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);let f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}let l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){let n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}let i=typeof require=="function"&&require;for(let o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
 module.exports = require("./recorder").Recorder;
@@ -6,10 +6,10 @@ module.exports = require("./recorder").Recorder;
 },{"./recorder":2}],2:[function(require,module,exports){
 'use strict';
 
-var _createClass = (function () {
+const _createClass = (function () {
     function defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-            var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+        for (let i = 0; i < props.length; i++) {
+            let descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
         }
     }return function (Constructor, protoProps, staticProps) {
         if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
@@ -21,9 +21,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Recorder = undefined;
 
-var _inlineWorker = require('inline-worker');
+let _inlineWorker = require('inline-worker');
 
-var _inlineWorker2 = _interopRequireDefault(_inlineWorker);
+let _inlineWorker2 = _interopRequireDefault(_inlineWorker);
 
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -35,9 +35,9 @@ function _classCallCheck(instance, Constructor) {
     }
 }
 
-var Recorder = exports.Recorder = (function () {
+let Recorder = exports.Recorder = (function () {
     function Recorder(source, cfg) {
-        var _this = this;
+        let _this = this;
 
         _classCallCheck(this, Recorder);
 
@@ -60,8 +60,8 @@ var Recorder = exports.Recorder = (function () {
         this.node.onaudioprocess = function (e) {
             if (!_this.recording) return;
 
-            var buffer = [];
-            for (var channel = 0; channel < _this.config.numChannels; channel++) {
+            let buffer = [];
+            for (let channel = 0; channel < _this.config.numChannels; channel++) {
                 buffer.push(e.inputBuffer.getChannelData(channel));
             }
             _this.worker.postMessage({
@@ -73,9 +73,9 @@ var Recorder = exports.Recorder = (function () {
         source.connect(this.node);
         this.node.connect(this.context.destination); //this should not be necessary
 
-        var self = {};
+        let self = {};
         this.worker = new _inlineWorker2.default(function () {
-            var recLength = 0,
+            let recLength = 0,
                 recBuffers = [],
                 sampleRate = undefined,
                 numChannels = undefined;
@@ -107,32 +107,32 @@ var Recorder = exports.Recorder = (function () {
             }
 
             function record(inputBuffer) {
-                for (var channel = 0; channel < numChannels; channel++) {
+                for (let channel = 0; channel < numChannels; channel++) {
                     recBuffers[channel].push(inputBuffer[channel]);
                 }
                 recLength += inputBuffer[0].length;
             }
 
             function exportWAV(type) {
-                var buffers = [];
-                for (var channel = 0; channel < numChannels; channel++) {
+                let buffers = [];
+                for (let channel = 0; channel < numChannels; channel++) {
                     buffers.push(mergeBuffers(recBuffers[channel], recLength));
                 }
-                var interleaved = undefined;
+                let interleaved = undefined;
                 if (numChannels === 2) {
                     interleaved = interleave(buffers[0], buffers[1]);
                 } else {
                     interleaved = buffers[0];
                 }
-                var dataview = encodeWAV(interleaved);
-                var audioBlob = new Blob([dataview], { type: type });
+                let dataview = encodeWAV(interleaved);
+                let audioBlob = new Blob([dataview], { type: type });
 
                 self.postMessage({ command: 'exportWAV', data: audioBlob });
             }
 
             function getBuffer() {
-                var buffers = [];
-                for (var channel = 0; channel < numChannels; channel++) {
+                let buffers = [];
+                for (let channel = 0; channel < numChannels; channel++) {
                     buffers.push(mergeBuffers(recBuffers[channel], recLength));
                 }
                 self.postMessage({ command: 'getBuffer', data: buffers });
@@ -145,15 +145,15 @@ var Recorder = exports.Recorder = (function () {
             }
 
             function initBuffers() {
-                for (var channel = 0; channel < numChannels; channel++) {
+                for (let channel = 0; channel < numChannels; channel++) {
                     recBuffers[channel] = [];
                 }
             }
 
             function mergeBuffers(recBuffers, recLength) {
-                var result = new Float32Array(recLength);
-                var offset = 0;
-                for (var i = 0; i < recBuffers.length; i++) {
+                let result = new Float32Array(recLength);
+                let offset = 0;
+                for (let i = 0; i < recBuffers.length; i++) {
                     result.set(recBuffers[i], offset);
                     offset += recBuffers[i].length;
                 }
@@ -161,10 +161,10 @@ var Recorder = exports.Recorder = (function () {
             }
 
             function interleave(inputL, inputR) {
-                var length = inputL.length + inputR.length;
-                var result = new Float32Array(length);
+                let length = inputL.length + inputR.length;
+                let result = new Float32Array(length);
 
-                var index = 0,
+                let index = 0,
                     inputIndex = 0;
 
                 while (index < length) {
@@ -176,21 +176,21 @@ var Recorder = exports.Recorder = (function () {
             }
 
             function floatTo16BitPCM(output, offset, input) {
-                for (var i = 0; i < input.length; i++, offset += 2) {
-                    var s = Math.max(-1, Math.min(1, input[i]));
+                for (let i = 0; i < input.length; i++, offset += 2) {
+                    let s = Math.max(-1, Math.min(1, input[i]));
                     output.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
                 }
             }
 
             function writeString(view, offset, string) {
-                for (var i = 0; i < string.length; i++) {
+                for (let i = 0; i < string.length; i++) {
                     view.setUint8(offset + i, string.charCodeAt(i));
                 }
             }
 
             function encodeWAV(samples) {
-                var buffer = new ArrayBuffer(44 + samples.length * 2);
-                var view = new DataView(buffer);
+                let buffer = new ArrayBuffer(44 + samples.length * 2);
+                let view = new DataView(buffer);
 
                 /* RIFF identifier */
                 writeString(view, 0, 'RIFF');
@@ -234,7 +234,7 @@ var Recorder = exports.Recorder = (function () {
         });
 
         this.worker.onmessage = function (e) {
-            var cb = _this.callbacks[e.data.command].pop();
+            let cb = _this.callbacks[e.data.command].pop();
             if (typeof cb == 'function') {
                 cb(e.data.data);
             }
@@ -283,11 +283,11 @@ var Recorder = exports.Recorder = (function () {
     }], [{
         key: 'forceDownload',
         value: function forceDownload(blob, filename) {
-            var url = (window.URL || window.webkitURL).createObjectURL(blob);
-            var link = window.document.createElement('a');
+            let url = (window.URL || window.webkitURL).createObjectURL(blob);
+            let link = window.document.createElement('a');
             link.href = url;
             link.download = filename || 'output.wav';
-            var click = document.createEvent("Event");
+            let click = document.createEvent("Event");
             click.initEvent("click", true, true);
             link.dispatchEvent(click);
         }
@@ -306,21 +306,21 @@ module.exports = require("./inline-worker");
 (function (global){
 "use strict";
 
-var _createClass = (function () { function defineProperties(target, props) { for (var key in props) { var prop = props[key]; prop.configurable = true; if (prop.value) prop.writable = true; } Object.defineProperties(target, props); } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+let _createClass = (function () { function defineProperties(target, props) { for (let key in props) { let prop = props[key]; prop.configurable = true; if (prop.value) prop.writable = true; } Object.defineProperties(target, props); } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
+let _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
 
-var WORKER_ENABLED = !!(global === global.window && global.URL && global.Blob && global.Worker);
+let WORKER_ENABLED = !!(global === global.window && global.URL && global.Blob && global.Worker);
 
-var InlineWorker = (function () {
+let InlineWorker = (function () {
   function InlineWorker(func, self) {
-    var _this = this;
+    let _this = this;
 
     _classCallCheck(this, InlineWorker);
 
     if (WORKER_ENABLED) {
-      var functionBody = func.toString().trim().match(/^function\s*\w*\s*\([\w\s,]*\)\s*{([\w\W]*?)}$/)[1];
-      var url = global.URL.createObjectURL(new global.Blob([functionBody], { type: "text/javascript" }));
+      let functionBody = func.toString().trim().match(/^function\s*\w*\s*\([\w\s,]*\)\s*{([\w\W]*?)}$/)[1];
+      let url = global.URL.createObjectURL(new global.Blob([functionBody], { type: "text/javascript" }));
 
       return new global.Worker(url);
     }
@@ -340,7 +340,7 @@ var InlineWorker = (function () {
   _createClass(InlineWorker, {
     postMessage: {
       value: function postMessage(data) {
-        var _this = this;
+        let _this = this;
 
         setTimeout(function () {
           _this.self.onmessage({ data: data });
