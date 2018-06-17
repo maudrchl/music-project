@@ -4,7 +4,7 @@ $buttons = Array.from(document.querySelectorAll('.touches'))
 console.log($touches_container)
 
 for ($button of $buttons) {
-	$button.addEventListener('click', (e) => {
+	$button.addEventListener('mousedown', (e) => {
 			var canvas = document.querySelector('canvas')
 			var canvasCtx = canvas.getContext('2d')
 			canvas.width = window.innerWidth
@@ -91,7 +91,7 @@ for ($button of $buttons) {
 			}
 
 			var drawCanvas = function () {
-				canvasCtx.fillStyle = '#2e2e2e'
+				canvasCtx.fillStyle = '#010101'
 				canvasCtx.fillRect(0, 0, canvas.width, canvas.height)
 
 				if (particles.length < settings.MAX_PARTICLES) {
@@ -107,7 +107,7 @@ for ($button of $buttons) {
 				// display amount of particles
 				if (settings.DISPLAY_INFO) {
 					canvasCtx.font = '11px Arial'
-					canvasCtx.fillStyle = '#6e6e6e'
+					canvasCtx.fillStyle = '#010101'
 					canvasCtx.textAlign = 'right'
 					canvasCtx.fillText(particles.length + ' particles', 5, 15)
 				}
