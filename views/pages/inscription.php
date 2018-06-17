@@ -35,18 +35,18 @@
             $_SESSION["user"] = $email;
             $_SESSION["id"] = $user_id->id;
 
-            header("Location: social");
-
             $prepare = $pdo->prepare('
             INSERT INTO
                 users (email, password, name)
             VALUES
                 (:email, :password, :name)
-        ');
-        $prepare->bindValue('email', $email);
-        $prepare->bindValue('password', $password);
-        $prepare->bindValue('name', $name);
-        $prepare->execute();
+            ');
+            $prepare->bindValue('email', $email);
+            $prepare->bindValue('password', $password);
+            $prepare->bindValue('name', $name);
+            $prepare->execute();
+
+            header("Location: login");
         }
     }
 ?>

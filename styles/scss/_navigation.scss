@@ -22,3 +22,22 @@ body {
 .item.active {
     background: #101010;
 }
+
+@media screen and (max-width: 800px) {
+    .navbar {
+      position:fixed;
+      padding-left: 20%;
+      bottom: 0;
+      left: 0;
+      width: 100vh;
+      height: 40px;
+      display: inline-block;
+      background: var(--black);
+    }
+
+    .item{
+        display: inline-block;
+        height: 50px;
+        padding: 0 30px;
+    }
+  }

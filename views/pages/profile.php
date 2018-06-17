@@ -13,7 +13,7 @@
     $query = $pdo->query('SELECT * FROM followers');
     $followers = $query->fetchAll();
 
-    $query = $pdo->query("SELECT * FROM posts WHERE user_id = ".$id."");
+    $query = $pdo->query("SELECT * FROM posts WHERE user_id = ".$id." ORDER BY stamp DESC");
     $posts = $query->fetchAll();
 
     function get_username($pdo, $id) {
