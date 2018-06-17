@@ -49,7 +49,7 @@ class PadMusic{
             });
         
             this.body.appendChild(this.$sons)
-        }      
+        }
     }
 
     keySound(){     
@@ -71,25 +71,25 @@ class PadMusic{
                     this.$button = touchtargeted
                     this.$button.classList.remove('active')
                 })
+            
+            document.addEventListener('keydown', () => {
+    
+                    this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+                    if (this.$button) {
+                        this.playSound(this.$button.dataset.sound)
+                        this.$button.classList.add('active')
+                    }
+                })
+                
+            document.addEventListener('keyup', () => {
+            
+                    this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
+                    if (this.$button) {
+                        this.playSound(this.$button.dataset.sound)
+                        this.$button.classList.remove('active')
+                    }
+                })
         }
-
-        document.addEventListener('keydown', () => {
-    
-            this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
-            if (this.$button) {
-                this.playSound(this.$button.dataset.sound)
-                this.$button.classList.add('active')
-            }
-        })
-        
-         document.addEventListener('keyup', () => {
-    
-            this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
-            if (this.$button) {
-                this.playSound(this.$button.dataset.sound)
-                this.$button.classList.remove('active')
-            }
-        })
     }
 
     playSound(soundName){
