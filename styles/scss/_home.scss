@@ -145,21 +145,27 @@ h2 {
     
     .add_post
     {
-    width: 80vh;
+    width: 50vh;
     height: 80px;
     background: $grey;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     border-radius: 10px;
     }
 
-    .items_social
-    {
-    width: 90vh;
-    height: 180px;
-    background: $grey;
-    margin-top: 20px;
-    margin-left: 10vh;
-    border-radius: 10px;
+    .items_social{
+        width: 50vh;
+        margin-left: 20px;
+        margin-top: 10px;
     }
-  }
+
+
+    .date_social
+    {
+    padding-left: 40px;
+    padding-top: 50px;
+    font-size: 12px;
+    width: 150px;
+    text-transform: uppercase;
+    }
+}

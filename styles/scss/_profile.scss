@@ -30,3 +30,28 @@
     font-size: 12px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 800px) {
+    .items_profilepage
+    {
+        height: 1700px;
+    }
+    
+    .responsive{
+        width: 20vh;
+        height: 830px;
+    }
+    .items_profile{
+        width: 50vh;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .date_profile
+    {
+    padding-left: 45px;
+    padding-top: 60px;
+    font-size: 12px;
+    width: 150px;
+    text-transform: uppercase;
+    }
+}

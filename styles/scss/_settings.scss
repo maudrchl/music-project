@@ -162,3 +162,29 @@ h3
     text-transform: uppercase;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    .settings{
+        width: 50vh;
+        height: 100%;
+        background: $grey;
+        margin-left: 20px;
+        margin-bottom: 5%; 
+        border-radius: 10px;
+    }
+
+    .settings_title {
+        margin-left: 20px;
+        padding-top: 6%;
+    }
+    
+    .form_settings
+    {
+    margin-left: 0px;
+    }
+
+    .add_button
+    {
+    width: 70px;
+    }
+  }

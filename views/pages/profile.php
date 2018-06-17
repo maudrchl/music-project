@@ -25,11 +25,11 @@
 
     <div class="items_profilepage">
         <?php echo $_SESSION["user"]; ?>
-        <h1 class="social_title">Your profile</h1>
+        <h1 class="social_title profile_h2">Your profile</h1>
         <a href="logout">
             <img class="off" src="assets/img/power.svg" width=20>
         </a>
-
+        <div class="responsive"></div>
         <?php foreach($posts as $_post): ?>
         <div class="items_profile">
             <img class="pic_home" src="https://api.adorable.io/avatars/240/<?= $id ?>" width="100" height="100" alt="">
