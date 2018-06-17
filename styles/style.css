@@ -120,20 +120,24 @@ h2 {
     width: 100vh; }
 
   .add_post {
-    width: 80vh;
+    width: 50vh;
     height: 80px;
     background: #E9E9E9;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     border-radius: 10px; }
 
   .items_social {
-    width: 90vh;
-    height: 180px;
-    background: #E9E9E9;
-    margin-top: 20px;
-    margin-left: 10vh;
-    border-radius: 10px; } }
+    width: 50vh;
+    margin-left: 20px;
+    margin-top: 10px; }
+
+  .date_social {
+    padding-left: 40px;
+    padding-top: 50px;
+    font-size: 12px;
+    width: 150px;
+    text-transform: uppercase; } }
 body {
   margin: 10px; }
 
@@ -144,7 +148,8 @@ body {
   width: 100px;
   height: 100vh;
   grid-template-rows: repeat(4, 4fr);
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 300; }
 
 .item {
   display: grid;
@@ -171,7 +176,7 @@ body {
     display: inline-block;
     height: 70px;
     width: 70px;
-    padding: 0 10px;
+    padding: 0 0px;
     margin-top: 20px; } }
 .pad_background {
   height: 100vh;
@@ -823,6 +828,24 @@ h3 {
   text-transform: uppercase;
   margin-left: 10px; }
 
+@media screen and (max-width: 800px) {
+  .settings {
+    width: 50vh;
+    height: 100%;
+    background: #E9E9E9;
+    margin-left: 20px;
+    margin-bottom: 5%;
+    border-radius: 10px; }
+
+  .settings_title {
+    margin-left: 20px;
+    padding-top: 6%; }
+
+  .form_settings {
+    margin-left: 0px; }
+
+  .add_button {
+    width: 70px; } }
 .profile_bar {
   height: 100vh;
   width: 300px;
@@ -857,6 +880,20 @@ h3 {
 .bio {
   line-height: 22px; }
 
+@media screen and (max-width: 800px) {
+  .profile_bar {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 0px; }
+
+  .profile_h2 {
+    position: absolute;
+    top: 0px;
+    z-index: 200; }
+
+  .profile_infos {
+    width: 50vh; } }
 :root {
   --black: #292929; }
 
@@ -883,6 +920,25 @@ h3 {
   font-size: 12px;
   text-transform: uppercase; }
 
+@media screen and (max-width: 800px) {
+  .items_profilepage {
+    height: 1700px; }
+
+  .responsive {
+    width: 20vh;
+    height: 830px; }
+
+  .items_profile {
+    width: 50vh;
+    margin-left: 20px;
+    margin-top: 10px; }
+
+  .date_profile {
+    padding-left: 45px;
+    padding-top: 60px;
+    font-size: 12px;
+    width: 150px;
+    text-transform: uppercase; } }
 @font-face {
   font-family: NexaH;
   src: url(../assets/fonts//NexaBlack.otf); }
@@ -936,6 +992,6 @@ body {
 @media screen and (max-width: 800px) {
   .off {
     position: fixed;
-    right: 120px;
+    right: 30px;
     top: 100px;
-    width: 40px; } }
+    width: 30px; } }

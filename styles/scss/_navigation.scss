@@ -10,6 +10,7 @@ body {
     height: 100vh;
     grid-template-rows: repeat(4, 4fr);
     overflow: hidden;
+    z-index: 300;
 }
 
 .item {
@@ -39,7 +40,7 @@ body {
         display: inline-block;
         height: 70px;
         width: 70px;
-        padding: 0 10px;
+        padding: 0 0px;
         margin-top: 20px;
     }
   }

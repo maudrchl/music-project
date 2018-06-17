@@ -43,3 +43,24 @@
 {
     line-height: 22px;
 }
+
+@media screen and (max-width: 800px) {
+    .profile_bar{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        left: 0px;
+    }
+    
+    .profile_h2
+    {
+        position: absolute;
+        top: 0px;
+        z-index: 200;
+    }
+
+    .profile_infos
+    {
+        width: 50vh;
+    }
+}
