@@ -71,9 +71,7 @@
             <div class="form">
                 <h2 class="login_title">NetPad Experience</h2>
                 <img src="assets/img/logo.png" width="30" class="logo">
-                <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare
-                    quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes
-                    in civitatibus perviis.</p>
+                <p class="login_txt">What if you were a famous DJ during a few minutes ? Share your passion about music with the others. Play with your Pad, customize it and enjoy your moment!</p>
                 <form action="#" method="post">
                     <div>
                         <label for="email">Email</label>
