@@ -7,12 +7,12 @@ canvas.height = window.innerHeight
 const keydown = function() {
 	document.addEventListener('keydown', () => {
 			const settings = {
-				MAX_PARTICLES: 200,
+				MAX_PARTICLES: 20,
 				DENSITY: 1,
 				MAX_LIFE: 500,
-				RADIUS: 1,
+				RADIUS: 2,
 				SPEED: 1,
-				GRAVITY: 0.1,
+				GRAVITY: 0.05,
 				BOUNCE_FACTOR: 0.7,
 				TRACTION: 0.8,
 				DISPLAY_INFO: false
@@ -119,12 +119,12 @@ const keydown = function() {
 const click = function() {
 	$button.addEventListener('click', (e) => {
 			const settings = {
-				MAX_PARTICLES: 500,
+				MAX_PARTICLES: 20,
 				DENSITY: 1,
 				MAX_LIFE: 500,
-				RADIUS: 1,
+				RADIUS: 2,
 				SPEED: 1,
-				GRAVITY: 0.1,
+				GRAVITY: 0.05,
 				BOUNCE_FACTOR: 0.7,
 				TRACTION: 0.8,
 				DISPLAY_INFO: false
