@@ -134,8 +134,8 @@
     <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"> </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="js/PadCanvas.js"></script>
     <script src="js/PadMusic.js"></script>
+    <script src="js/PadCanvas.js"></script>
     <script src="js/Record.js"></script>
     <script src="js/RecordMicrophone.js"></script>
     <script src="js/main.js"></script>

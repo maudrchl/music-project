@@ -15,3 +15,8 @@ if(typeof Settings == "function"){
 if(typeof Loader == "function"){
     const loader = new Loader()
 }
+
+
+if(typeof PadCanvas == "function"){
+    const padCanvas = new PadCanvas()
+}

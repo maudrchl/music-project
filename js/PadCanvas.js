@@ -1,32 +1,36 @@
-window.onload = function() {
-    const canvas = document.querySelector('canvas')
-	const canvasCtx = canvas.getContext('2d')
+
+$buttons = Array.from(document.querySelectorAll('.touches'))
+
+console.log($buttons)
+
+$buttons.addEventListener('click',(e) => {
+	var canvas = document.querySelector('canvas')
+	var canvasCtx = canvas.getContext('2d')
 	canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+	canvas.height = window.innerHeight
 
-
-	let settings = {
-		MAX_PARTICLES: 100,
+	var settings = {
+		MAX_PARTICLES: 500,
 		DENSITY: 1,
 		MAX_LIFE: 500,
-		RADIUS: 3,
+		RADIUS: 1,
 		SPEED: 1,
-		GRAVITY: 0.01,
-		BOUNCE_FACTOR: 0.9,
-		TRACTION: 0.1,
-		DISPLAY_INFO: true
+		GRAVITY: 0.1,
+		BOUNCE_FACTOR: 0.7,
+		TRACTION: 0.8,
+		DISPLAY_INFO: false
 	}
 
-	const particles = []
+	var particles = []
 
-	const random = function(min, max) {
+	var random = function(min, max) {
 		return Math.random() * (max - min) + min
 	}
 
-	const particle = function() {
+	var particle = function() {
 		this.x = settings.RADIUS
 		this.y = canvas.height / 3
-		this.vx = random(1, 3)
+		this.vx = random(-1, 12)
 		this.vy = random(-1, -3)
 		this.life = 0
 		this.radius = settings.RADIUS
@@ -35,7 +39,7 @@ window.onload = function() {
 	}
 
 	particle.prototype.reset = function() {
-		const particle = this
+		var particle = this
 
 		particle.x = settings.RADIUS
 		particle.y = canvas.height / 3
@@ -45,27 +49,31 @@ window.onload = function() {
 	}
 
 	particle.prototype.draw = function() {
-		const particle = this
+		var particle = this
 
 		// bounce from walls
-		if(particle.x + particle.radius > canvas.width) {
-            particle.vx *= -settings.BOUNCE_FACTOR
-            particle.x = canvas.width - particle.radius
-        }
-        else if(particle.x - particle.radius < 0) {
-            particle.vx *= -settings.BOUNCE_FACTOR
-            particle.x = particle.radius 
-        }
-        if(particle.y + particle.radius > canvas.height){
-            particle.vy *= -settings.BOUNCE_FACTOR
-            particle.y = canvas.height - particle.radius
-            particle.vx *= settings.TRACTION
-        }
-        else if(particle.y - particle.radius < 0){
-            particle.vy *= -settings.BOUNCE_FACTOR
-            particle.y = particle.radius
-            particle.vx *= settings.TRACTION 
-        }
+		if(particle.x + particle.radius > canvas.width)
+		{ 
+			particle.vx *= -settings.BOUNCE_FACTOR
+			particle.x = canvas.width - particle.radius 
+		}
+		else if(particle.x - particle.radius < 0)
+		{ 
+			particle.vx *= -settings.BOUNCE_FACTOR
+			particle.x = particle.radius 
+		}
+		if(particle.y + particle.radius > canvas.height)
+		{ 
+			particle.vy *= -settings.BOUNCE_FACTOR 
+			particle.y = canvas.height - particle.radius 
+			particle.vx *= settings.TRACTION
+		}
+		else if(particle.y - particle.radius < 0)
+		{ 
+			particle.vy *= -settings.BOUNCE_FACTOR 
+			particle.y = particle.radius 
+			particle.vx *= settings.TRACTION
+		}
 
 		// gravity
 		particle.vy += settings.GRAVITY
@@ -87,8 +95,8 @@ window.onload = function() {
 		canvasCtx.fill()
 	}
 
-	const drawCanvas = function() {
-        canvasCtx.fillStyle = '#010101'
+	var drawCanvas = function() {
+		canvasCtx.fillStyle = '#2e2e2e'
 		canvasCtx.fillRect(0, 0, canvas.width, canvas.height)
 
 		if(particles.length < settings.MAX_PARTICLES) {
@@ -97,7 +105,7 @@ window.onload = function() {
 			}
 		}
 
-		for(let i in particles) {
+		for(var i in particles) {
 			particles[i].draw()
 		}
 
@@ -105,7 +113,7 @@ window.onload = function() {
 		if(settings.DISPLAY_INFO) {
 			canvasCtx.font = '11px Arial'
 			canvasCtx.fillStyle = '#6e6e6e'
-			canvasCtx.textAlign = 'left'
+			canvasCtx.textAlign = 'right'
 			canvasCtx.fillText(particles.length + ' particles', 5, 15)
 		}
 
@@ -114,3 +122,4 @@ window.onload = function() {
 
 	drawCanvas()
 }
+)
