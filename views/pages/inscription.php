@@ -58,7 +58,7 @@
             <h2 class="inscription_title">Sign Up</h2>
         </div>
         <div class="form_inscription">
-            <form class="jaimelesaucisson" action="#" method="post">
+            <form class="signup_form" action="#" method="post">
                 <div class="form_inscription">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="netpad@experience.com">   

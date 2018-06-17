@@ -24,6 +24,7 @@
     font-size: 14px;
     width: 420px;
     margin-left: 100px;
+    line-height: 20px;
 }
 
 
@@ -236,5 +237,42 @@ $animation-item-offset: $loader-item-size / 4;
   }
   100% {
     transform: rotate($animation-rotation-corner * $animation-direction);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container
+  {
+    display: block;
+    width: 50vh;
+    margin-left: 0;
+  }
+
+  .img_pad
+  {
+      display: none;
+  }
+  
+  .form
+  {
+    width: 50vh;
+    display: block;
+  }
+
+  .form p 
+  {
+    font-family: NexaL, sans-serif;
+    font-size: 14px;
+    width: 260px;
+    margin-left: 70px;
+  }
+
+  .login_title
+  {
+    font-size: 30px;
+    font-family: NexaH, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30px;
   }
 }
