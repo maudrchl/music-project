@@ -75,3 +75,12 @@ body{
     margin-left: 50%;
     margin-top: 100px;
 }
+
+@media screen and (max-width: 800px) {
+    .off {
+        position: fixed;
+        right: 120px;
+        top: 100px;
+        width: 40px;
+    }
+  }

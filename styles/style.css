@@ -108,6 +108,32 @@ h2 {
   margin-bottom: -10px;
   line-height: 20px; }
 
+@media screen and (max-width: 800px) {
+  h1 {
+    margin-left: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: NexaH, sans-serif; }
+
+  .container {
+    width: 100vh; }
+
+  .add_post {
+    width: 80vh;
+    height: 80px;
+    background: #E9E9E9;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px; }
+
+  .items_social {
+    width: 90vh;
+    height: 180px;
+    background: #E9E9E9;
+    margin-top: 20px;
+    margin-left: 10vh;
+    border-radius: 10px; } }
 body {
   margin: 10px; }
 
@@ -137,14 +163,16 @@ body {
     bottom: 0;
     left: 0;
     width: 100vh;
-    height: 40px;
+    height: 80px;
     display: inline-block;
     background: var(--black); }
 
   .item {
     display: inline-block;
-    height: 50px;
-    padding: 0 30px; } }
+    height: 70px;
+    width: 70px;
+    padding: 0 10px;
+    margin-top: 20px; } }
 .pad_background {
   height: 100vh;
   display: grid;
@@ -904,3 +932,10 @@ body {
   width: 50px;
   margin-left: 50%;
   margin-top: 100px; }
+
+@media screen and (max-width: 800px) {
+  .off {
+    position: fixed;
+    right: 120px;
+    top: 100px;
+    width: 40px; } }
