@@ -451,7 +451,7 @@ audio {
 .js-stop3 {
   padding: 10px 30px;
   display: block;
-  background: #e8e8e8;
+  background: #ffe100;
   border: none;
   margin: 10px auto -130px auto;
   border-radius: 60px; }
@@ -485,6 +485,9 @@ audio {
 .label_color {
   margin-left: 10px;
   text-transform: uppercase; }
+
+canvas {
+  opacity: 0.7; }
 
 @media screen and (max-width: 800px) {
   canvas {

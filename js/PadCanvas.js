@@ -85,7 +85,7 @@ window.onload = function () {
 	}
 
 	let drawCanvas = function () {
-		canvasCtx.fillStyle = '#2e2e2e'
+		canvasCtx.fillStyle = '#000000'
 		canvasCtx.fillRect(0, 0, canvas.width, canvas.height)
 
 		if (particles.length < settings.MAX_PARTICLES) {

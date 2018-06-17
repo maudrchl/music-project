@@ -27,6 +27,7 @@
 - To show the profile of the others
 - To share the sound you made on the timeline
 - Add others music styles 
+- The website has to be on HTTPS to allow using microphone 
 
 ### Credits ✍🏼
 - Designed by Maud Rochel 

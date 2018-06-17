@@ -1,13 +1,8 @@
 <?php
-    session_start();
-    if(isset($_SESSION['id'])) {
-        echo $_SESSION['id'];
-    }
-
     $id = $_SESSION['id'];
-        include 'views/partials/navigation.php';
-        include 'views/partials/form.php';
-        $_SESSION["key"] = $_POST["key"];
+    include 'views/partials/navigation.php';
+    include 'views/partials/form.php';
+    $_SESSION["key"] = $_POST["key"];
 ?>
 
     <div class="setting">
@@ -76,7 +71,7 @@
             <div class="checkbox-container">
                 <div class="choice">
                     <input class="settings_input" type="checkbox" name="key" value="azerty" id="azerty" checked>
-                    <label class="settings_label" for="azerty">AZERTY</label>
+                    <label class="settings_label" for="azerty" id="azerty">AZERTY</label>
                 </div>
                 <div class="choice">
                     <input class="settings_input" type="checkbox" name="key" value="qwerty" id="qwerty">

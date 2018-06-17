@@ -13,7 +13,7 @@
                 include "views/pages/social.php";
                 break;
             case 'pad':
-                if($_SESSION["key"]  === "azerty"){
+                if($_SESSION["key"] === "azerty"){
                     include "views/pages/pad.php";
                 } else {
                     include "views/pages/pad_qwerty.php";

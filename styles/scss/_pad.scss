@@ -341,7 +341,7 @@ audio
 {
     padding: 10px 30px;
     display: block;
-    background:rgb(232, 232, 232);
+    background:rgb(255, 225, 0);
     border: none;
     margin:10px auto -130px auto;
     border-radius: 60px;
@@ -364,7 +364,7 @@ audio
     border-radius: 50px;
     -webkit-box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
-    box-shadow: 0px 6px 38px -8px rgba(0,0,0,0.4);
+    box-shadow: 0px 6px 38px -8px rgba(0, 0, 0, 0.4);
 }
 
 .small_button
@@ -383,6 +383,11 @@ audio
 {
     margin-left: 10px;
     text-transform: uppercase;
+}
+
+canvas
+{
+    opacity: 0.7;
 }
 
 @media screen and (max-width: 800px) {
