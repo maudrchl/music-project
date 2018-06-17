@@ -5,12 +5,6 @@
     <div class="pad_background items">
             <canvas class="canvas"></canvas>
         </div>
-        <div class="items">
-            <?php
-            include 'navigation.php';
-        ?>
-        </div>
-        <div class="pad_background items"></div>
         <div class="pad items">
             <span class="top_title_beats top_title">BEATS</span>
             <span class="top_title_bass top_title">BASS</span>
