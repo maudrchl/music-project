@@ -6,7 +6,6 @@ canvas.height = window.innerHeight
 
 const keydown = function() {
 	document.addEventListener('keydown', () => {
-		console.log('non')
 			const settings = {
 				MAX_PARTICLES: 200,
 				DENSITY: 1,
@@ -117,10 +116,8 @@ const keydown = function() {
 	)
 }
 
-
 const click = function() {
 	$button.addEventListener('click', (e) => {
-		console.log('oui')
 			const settings = {
 				MAX_PARTICLES: 500,
 				DENSITY: 1,
@@ -230,8 +227,6 @@ const click = function() {
 		}
 	)
 }
-
-
 
 for ($button of $buttons) {
 click()
