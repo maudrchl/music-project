@@ -215,7 +215,7 @@ body {
   grid-row: 1 / 8; }
 
 .top_title_melodies {
-  grid-column: 8 / 11;
+  grid-column: 9 / 11;
   grid-row: 1 / 8;
   margin-left: -10px; }
 
@@ -293,37 +293,37 @@ body {
   grid-column: 1; }
 
 .left_touches_container_beats {
-  grid-column: 3 / 11;
+  grid-column: 3 / 6;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_beats {
-  grid-column: 4 / 11;
+  grid-column: 4 / 7;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .left_touches_container_bass {
-  grid-column: 5 / 11;
+  grid-column: 5 / 8;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_bass {
-  grid-column: 6 / 11;
+  grid-column: 6 / 9;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .left_touches_container_melodies {
-  grid-column: 7 / 11;
+  grid-column: 7 / 10;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
 
 .right_touches_container_melodies {
-  grid-column: 8 / 8;
+  grid-column: 8 / 11;
   grid-row: 1;
   display: grid;
   grid-gap: 10px; }
@@ -375,7 +375,7 @@ body {
 
 audio {
   width: 180px;
-  margin-right: -200px;
+  margin-right: -45px;
   margin-left: 5px; }
 
 .js-start {
@@ -383,7 +383,7 @@ audio {
   display: block;
   background: #e8e8e8;
   border: none;
-  margin: 20px auto 0 auto;
+  margin: 0px auto 0 auto;
   border-radius: 60px; }
 
 .js-start:hover {
