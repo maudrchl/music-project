@@ -36,7 +36,7 @@
             <!-- email -->
             <form class="form_settings form_settingsI" action="#" method="post">
                 <input class="add_msg" type="text" placeholder="<?= $user->description ?>" name="description">
-                <input class="add_button" type="submit" name="submit_description" value="Edit">Edit</button>
+                <button class="add_button" type="submit" name="submit_description" value="Edit">Edit</button>
             </form>
         </div>
         <div class="settings setting2">
