@@ -71,7 +71,7 @@
             <div class="form">
                 <h2 class="login_title">NetPad Experience</h2>
                 <img src="assets/img/logo.png" width="30" class="logo">
-                <p class="login_txt">What if you were a famous DJ during a few minutes ? Share your passion about music with the others. Play with your Pad, customize it and enjoy your moment!</p>
+                <p class="login_txt">What if you were a famous DJ during a few minutes ? Share your passion about music with the others. Play with your Pad, customize it and enjoy your moment! You have some troubles : use the guest@gmail.com account / password : guest.</p>
                 <form action="#" method="post">
                     <div>
                         <label for="email">Email</label>
