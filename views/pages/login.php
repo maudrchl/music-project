@@ -56,14 +56,14 @@
 ?>
 
     <body>
-        <div class="loading">
+        <!-- <div class="loading">
             <ul class="loader">
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-        </div>
+        </div> -->
         </div>
         <div class="container">
             <img class="img_pad" src="assets/img/pad.png">
@@ -75,11 +75,11 @@
                 <form action="#" method="post">
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="netpad@experience.com">
+                        <input type="email" name="email" id="email" placeholder="netpad@experience.com" class="login_input">
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="•••••••••">
+                        <input type="password" name="password" id="password" placeholder="•••••••••" class="login_input">
                     </div>
                     <div>
                         <input type="submit" class="submit" value="log in">

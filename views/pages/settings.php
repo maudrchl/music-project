@@ -70,11 +70,11 @@
         <form class="form_settings2" action="#" method="post">
             <div class="checkbox-container">
                 <div class="choice">
-                    <input class="settings_input" type="checkbox" name="key" value="azerty" id="azerty" checked>
+                    <input class="settings_input" type="checkbox" name="key" value="azerty" id="azerty">
                     <label class="settings_label" for="azerty" id="azerty">AZERTY</label>
                 </div>
                 <div class="choice">
-                    <input class="settings_input" type="checkbox" name="key" value="qwerty" id="qwerty">
+                    <input class="settings_input" type="checkbox" name="key" value="qwerty" id="qwerty" checked>
                     <label class="settings_label" for="qwerty" id="qwerty">QWERTY</label>
                 </div>
             </div>

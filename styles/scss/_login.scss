@@ -27,6 +27,13 @@
     line-height: 20px;
 }
 
+.login_input
+{
+  border: 0.5px solid #E0E0E0;
+  margin-top: 5px;
+}
+.login_input:focus {outline:0;}
+
 
 label
 {

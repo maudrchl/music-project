@@ -375,7 +375,7 @@ body {
 
 audio {
   width: 180px;
-  margin-right: -100px;
+  margin-right: -200px;
   margin-left: 5px; }
 
 .js-start {
@@ -558,6 +558,13 @@ canvas {
   width: 420px;
   margin-left: 100px;
   line-height: 20px; }
+
+.login_input {
+  border: 0.5px solid #E0E0E0;
+  margin-top: 5px; }
+
+.login_input:focus {
+  outline: 0; }
 
 label {
   display: block;
