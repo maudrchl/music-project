@@ -36,23 +36,23 @@ class PadMusic{
         }
     }
 
-    createAudio(){   
+    createAudio(){
         for (let i = 0; i <= this.$buttons.length; i++) {
 
             this.body = document.querySelector('body')
             this.$sons = document.createElement('audio')
-        
+
             this.$buttons.forEach(element => {
-        
+
                 this.$sons.className = `sound pad_${i}`
                 this.$sons.src = `sons/bass/${i}.wav`
             });
-        
+
             this.body.appendChild(this.$sons)
-        }      
+        }
     }
 
-    keySound(){     
+    keySound(){
         for (this.$button of this.$buttons) {
             this.$button.addEventListener('mousedown', (event) => {
                 let soundtargeted = event.target.dataset.sound
@@ -74,19 +74,21 @@ class PadMusic{
         }
 
         document.addEventListener('keydown', () => {
-    
+            console.log("ui");
+
             this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
             if (this.$button) {
                 this.playSound(this.$button.dataset.sound)
                 this.$button.classList.add('active')
             }
         })
-        
+
          document.addEventListener('keyup', () => {
-    
+            console.log("non");
+
             this.$button = this.$buttons.find((element) => element.classList.contains(`key-${event.keyCode}`))
             if (this.$button) {
-                this.playSound(this.$button.dataset.sound)
+                // this.playSound(this.$button.dataset.sound)
                 this.$button.classList.remove('active')
             }
         })
@@ -104,7 +106,7 @@ class PadMusic{
         this.$bckg = document.querySelector('.pad_background')
 
         this.$small_button.addEventListener('mousedown', () =>{
-            
+
             if(this.$small_button.classList.contains('active')){
                 this.$small_button.classList.remove('active')
                 this.$small_button.style.transform = "translate(0px)"

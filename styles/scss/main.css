@@ -75,8 +75,8 @@ body {
 
 .pad {
   display: grid;
-  grid-column: 3 / 12;
-  grid-row: 2 / 11;
+  grid-column: 4 / 13;
+  grid-row: 4 / 14;
   border-radius: 24px;
   background-color: #252525; }
 

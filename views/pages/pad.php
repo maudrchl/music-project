@@ -3,8 +3,7 @@
 ?>
     <div class="container">
     <div class="pad_background items">
-            <canvas class="canvas"></canvas>
-        </div>
+    </div>
         <div class="pad items">
             <span class="top_title_beats top_title">BEATS</span>
             <span class="top_title_bass top_title">BASS</span>
@@ -83,7 +82,7 @@
             <div class="touches touches_bass right_touche_bass key-80" data-sound="sons/bass/10.wav">P</div>
             <div class="touches touches_bass right_touche_bass key-219" data-sound="sons/bass/11.wav">^</div>
             <div class="touches touches_bass right_touche_bass key-221" data-sound="sons/bass/12.wav">$</div>
-                
+
             </div>
 
             <!--LEFT MELODIES TOUCHES -->

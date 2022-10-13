@@ -4,6 +4,7 @@
     include "views/partials/footer.php";
     include "config.php";
 
+
     if (isset($_GET['q'])) {
         switch($_GET['q']) {
             case 'login':

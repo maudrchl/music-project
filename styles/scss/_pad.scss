@@ -1,15 +1,15 @@
 .pad_background {
     height: 100vh;
     display: grid;
-    grid-column: 2 / 14;
+    grid-column: 2 / 16;
     background-color: #010101;
-    margin-left: -24px; // Zone de blanc lorsqu'on 
+    margin-left: -24px; // Zone de blanc lorsqu'on
 }
 
 .pad {
     display: grid;
-    grid-column: 3 / 11;
-    grid-row: 2 / 11;
+    grid-column: 4 / 13;
+    grid-row: 4 / 14;
     border-radius: 24px;
     background-color: #252525;
     z-index: 44;
@@ -395,12 +395,12 @@ canvas
     {
         display: block;
     }
-    
+
     canvas
     {
         display: none;
     }
-    
+
     .pad_background
     {
         display: none;
